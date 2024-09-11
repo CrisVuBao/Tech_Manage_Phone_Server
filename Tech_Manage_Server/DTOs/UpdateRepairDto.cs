@@ -2,8 +2,9 @@
 
 namespace Tech_Manage_Server.DTOs
 {
-    public class CreateRepairDto
+    public class UpdateRepairDto
     {
+        public int RepairId { get; set; }
         public string DeviceName { get; set; }
         public string ErrorCondition { get; set; }
         public string CurrentStatus { get; set; } // hiện trạng

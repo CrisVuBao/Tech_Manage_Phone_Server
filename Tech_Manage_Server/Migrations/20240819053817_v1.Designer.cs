@@ -12,8 +12,8 @@ using Tech_Manage_Server.Data;
 namespace Tech_Manage_Server.Migrations
 {
     [DbContext(typeof(ManageDBContext))]
-    [Migration("20240727024203_add database")]
-    partial class adddatabase
+    [Migration("20240819053817_v1")]
+    partial class v1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,8 +37,9 @@ namespace Tech_Manage_Server.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PhoneNumber")
-                        .HasColumnType("int");
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CustomerId");
 
@@ -61,9 +62,6 @@ namespace Tech_Manage_Server.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("CustomerId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CustomersCustomerId")
                         .HasColumnType("int");
 
                     b.Property<string>("DeviceName")
@@ -95,25 +93,30 @@ namespace Tech_Manage_Server.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TotalAmount")
-                        .HasColumnType("int");
+                    b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("RepairId");
 
-                    b.HasIndex("CustomersCustomerId");
+                    b.HasIndex("CustomerId");
 
                     b.ToTable("Repairs");
                 });
 
             modelBuilder.Entity("Tech_Manage_Server.Models.Repair", b =>
                 {
-                    b.HasOne("Tech_Manage_Server.Models.Customers", "Customers")
-                        .WithMany()
-                        .HasForeignKey("CustomersCustomerId")
+                    b.HasOne("Tech_Manage_Server.Models.Customers", "Customer")
+                        .WithMany("Repairs")
+                        .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Customers");
+                    b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("Tech_Manage_Server.Models.Customers", b =>
+                {
+                    b.Navigation("Repairs");
                 });
 #pragma warning restore 612, 618
         }

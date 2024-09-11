@@ -36,7 +36,9 @@ app.UseHttpsRedirection();
 
 // Cấp phép cho frontend
 app.UseCors(policy =>
-    policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()
+    policy.AllowAnyHeader()
+    .AllowAnyMethod()
+    .AllowAnyOrigin()
 );
 
 app.UseAuthorization();

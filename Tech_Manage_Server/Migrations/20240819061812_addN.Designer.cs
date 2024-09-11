@@ -12,8 +12,8 @@ using Tech_Manage_Server.Data;
 namespace Tech_Manage_Server.Migrations
 {
     [DbContext(typeof(ManageDBContext))]
-    [Migration("20240727033723_fix database")]
-    partial class fixdatabase
+    [Migration("20240819061812_addN")]
+    partial class addN
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,11 +34,9 @@ namespace Tech_Manage_Server.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CustomerId"));
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CustomerId");
@@ -54,64 +52,58 @@ namespace Tech_Manage_Server.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RepairId"));
 
-                    b.Property<DateTime>("CreationDate")
+                    b.Property<DateTime?>("CreationDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CurrentStatus")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CustomersCustomerId")
+                    b.Property<int>("CustomerId")
                         .HasColumnType("int");
 
                     b.Property<string>("DeviceName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ErrorCondition")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsDelete")
+                    b.Property<bool?>("IsDelete")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("Lend")
+                    b.Property<bool?>("Lend")
                         .HasColumnType("bit");
 
                     b.Property<string>("Note")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ReturnDate")
+                    b.Property<DateTime?>("ReturnDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Status")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("TotalAmount")
+                    b.Property<decimal?>("TotalAmount")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("RepairId");
 
-                    b.HasIndex("CustomersCustomerId");
+                    b.HasIndex("CustomerId");
 
                     b.ToTable("Repairs");
                 });
 
             modelBuilder.Entity("Tech_Manage_Server.Models.Repair", b =>
                 {
-                    b.HasOne("Tech_Manage_Server.Models.Customers", "Customers")
+                    b.HasOne("Tech_Manage_Server.Models.Customers", "Customer")
                         .WithMany()
-                        .HasForeignKey("CustomersCustomerId")
+                        .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Customers");
+                    b.Navigation("Customer");
                 });
 #pragma warning restore 612, 618
         }

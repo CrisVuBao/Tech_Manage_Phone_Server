@@ -1,4 +1,5 @@
 ﻿using Tech_Manage_Server.DTOs;
+using Tech_Manage_Server.Helpers;
 using Tech_Manage_Server.Models;
 
 namespace Tech_Manage_Server.Repositories.Interface
@@ -7,7 +8,7 @@ namespace Tech_Manage_Server.Repositories.Interface
     {
         Task<List<Repair>> GetAllRepairAsync();
         Task<Repair> GetRepairWithIdAsync(int id);
-        Task<Repair> CreateRepairAsync(CreateRepairDto repairDto);
-        Task<Repair> UpdateRepairAsync(int repairId, RepairDto repairDto);
+        Task<Response<Repair>> CreateRepairAsync(CreateRepairDto createRepairDto);
+        Task<Repair> UpdateRepairAsync(Repair repair);
     }
 }

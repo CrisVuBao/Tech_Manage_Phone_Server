@@ -9,6 +9,7 @@ namespace Tech_Manage_Server.Helpers
         public MappingProfiles()
         {
             CreateMap<Repair, CreateRepairDto>().ReverseMap();
+            CreateMap<Repair,UpdateRepairDto>().ReverseMap();
         }
     }
 }
