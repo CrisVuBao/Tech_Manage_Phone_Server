@@ -24,7 +24,7 @@ namespace Tech_Manage_Server.Controllers
         }
 
         [HttpPost("CreateRepair")]
-        public async Task<ActionResult<Repair>> CreateRepair([FromBody]CreateRepairDto createRepairDto)
+        public async Task<ActionResult<Repair>> CreateRepair([FromBody] CreateRepairDto createRepairDto)
         {
             var result = await _repairRepository.CreateRepairAsync(createRepairDto);
             return Ok(result);
@@ -38,7 +38,7 @@ namespace Tech_Manage_Server.Controllers
         }
 
         [HttpGet("GetRepairById/{id}")]
-        public async Task<ActionResult<Repair>> GetRepairById(int id) 
+        public async Task<ActionResult<Repair>> GetRepairById(int id)
         {
             var result = await _repairRepository.GetRepairWithIdAsync(id);
             return Ok(result);
@@ -52,7 +52,6 @@ namespace Tech_Manage_Server.Controllers
                 RepairId = id,
                 DeviceName = updateRepairDto.DeviceName,
                 ErrorCondition = updateRepairDto.ErrorCondition,
-                CurrentStatus = updateRepairDto.CurrentStatus,
                 ImageUrl = updateRepairDto.ImageUrl,
                 Lend = updateRepairDto.Lend,
                 CreationDate = updateRepairDto.CreationDate,

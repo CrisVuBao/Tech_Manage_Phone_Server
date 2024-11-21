@@ -16,6 +16,6 @@ namespace Tech_Manage_Server.DTOs
         public bool IsDelete { get; set; }
         public string Status { get; set; } // Received: Đã nhận, InProgress: Đang sửa, Completed: Đã xong
 
-        public Customers Customer { get; set; }
+        public Customer Customer { get; set; }
     }
 }

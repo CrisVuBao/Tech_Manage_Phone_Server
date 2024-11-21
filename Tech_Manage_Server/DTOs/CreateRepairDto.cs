@@ -17,6 +17,6 @@ namespace Tech_Manage_Server.DTOs
         public string Status { get; set; } // Received: Đã nhận, InProgress: Đang sửa, Completed: Đã xong
 
         public int CustomerId { get; set; }
-        public Customers Customer { get; set; }
+        public Customer Customer { get; set; }
     }
 }

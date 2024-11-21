@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "yVVVbHzDt5oYBnQS6LRJvVj1dUCRk4VxtJqzvTyng5g=",
+  "Source": "Tech_Manage_Server",
+  "BasePath": "_content/Tech_Manage_Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -8,9 +8,12 @@ namespace Tech_Manage_Server.Models
     {
         [Key]
         public int RepairId { get; set; }
-        public string? DeviceName { get; set; }
+
+        [Required]
+        [MaxLength(100)]
+        public string DeviceName { get; set; }
+
         public string? ErrorCondition { get; set; }
-        public string? CurrentStatus { get; set; } // hiện trạng
         public string? ImageUrl { get; set; }
         public bool? Lend { get; set; } // cho mượn máy
         public DateTime? CreationDate { get; set; }
@@ -20,8 +23,16 @@ namespace Tech_Manage_Server.Models
         public bool? IsDelete { get; set; }
         public string? Status { get; set; } // Received: Đã nhận, InProgress: Đang sửa, Completed: Đã xong
 
-        [ForeignKey("CustomerId")]
+        [ForeignKey("Customer")]
         public int CustomerId { get; set; }
-        public Customers Customer { get; set; }
+        public Customer Customer { get; set; }
+
+        [ForeignKey("Employee")]
+        public int? EmployeeId { get; set; }
+        public Employee Employee { get; set; }
+
+        public ICollection<RepairItem> RepairItems { get; set; }
+        public Invoice Invoice { get; set; } // hóa đơn
+        public ICollection<Feedbacks> Feedbacks { get; set; }
     }
 }
