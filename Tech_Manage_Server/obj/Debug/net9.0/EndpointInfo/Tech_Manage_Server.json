@@ -677,12 +677,12 @@
       },
       "LoginDto": {
         "required": [
-          "emailOrPhoneNumber",
+          "email",
           "password"
         ],
         "type": "object",
         "properties": {
-          "emailOrPhoneNumber": {
+          "email": {
             "minLength": 1,
             "type": "string"
           },

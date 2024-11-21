@@ -37,12 +37,12 @@ namespace Tech_Manage_Server.Controllers
             // Kiểm tra Email đã tồn tại
             var emailExists = await _userManager.FindByEmailAsync(model.Email);
             if (emailExists != null)
-                return Conflict(new { message = "Email already exists!" });
+                return Conflict(new { message = "Email đã tồn tại!" });
 
             // Kiểm tra PhoneNumber đã tồn tại
             var phoneExists = await _userManager.Users.FirstOrDefaultAsync(u => u.PhoneNumber == model.PhoneNumber);
             if (phoneExists != null)
-                return Conflict(new { message = "Phone number already exists!" });
+                return Conflict(new { message = "Phone number đã tồn tại!" });
 
             ApplicationUser user = new ApplicationUser()
             {
@@ -59,9 +59,9 @@ namespace Tech_Manage_Server.Controllers
             }
             else
             {
-                await _userManager.AddToRoleAsync(user, "Admin");
+                await _userManager.AddToRoleAsync(user, "Member");
             }
-            return Ok(new { message = "User created successfully!" });
+            return Ok(new { message = "Tạo tài khoản thành công!" });
         }
 
         [HttpPost("Login")]
@@ -73,15 +73,15 @@ namespace Tech_Manage_Server.Controllers
             ApplicationUser user = null;
 
             // Kiểm tra xem đầu vào là Email hay Số điện thoại
-            if (new EmailAddressAttribute().IsValid(model.EmailOrPhoneNumber))
+            if (new EmailAddressAttribute().IsValid(model.Email))
             {
                 // Đầu vào là Email
-                user = await _userManager.FindByEmailAsync(model.EmailOrPhoneNumber);
+                user = await _userManager.FindByEmailAsync(model.Email);
             }
             else
             {
                 // Đầu vào có thể là Số điện thoại
-                user = await _userManager.Users.FirstOrDefaultAsync(u => u.PhoneNumber == model.EmailOrPhoneNumber);
+                user = await _userManager.Users.FirstOrDefaultAsync(u => u.PhoneNumber == model.Email);
             }
 
             if (user != null && await _userManager.CheckPasswordAsync(user, model.Password))
@@ -104,10 +104,13 @@ namespace Tech_Manage_Server.Controllers
 
                 var token = GetToken(authClaims);
 
+                var roles = await _userManager.GetRolesAsync(user);
+
                 return Ok(new
                 {
-                    model.EmailOrPhoneNumber,
+                    user.Email,
                     token = new JwtSecurityTokenHandler().WriteToken(token),
+                    roles,
                     expiration = token.ValidTo
                 });
             }
