@@ -15,6 +15,7 @@
           "Microsoft.EntityFrameworkCore.Design": "9.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.0",
+          "RequiredIf.Core": "1.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
@@ -754,6 +755,14 @@
           }
         }
       },
+      "RequiredIf.Core/1.0.0": {
+        "runtime": {
+          "lib/netcoreapp3.0/RequiredIf.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.4.0": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
@@ -1413,6 +1422,13 @@
       "sha512": "sha512-YqueG52R/Xej4VVbKuRIodjiAhV0HR/XVbLbNrJhCZnzjnSjgMJ/dCdV0akQQxavX6hp/LC6rqLGLcXeQYU7XA==",
       "path": "mono.texttemplating/3.0.0",
       "hashPath": "mono.texttemplating.3.0.0.nupkg.sha512"
+    },
+    "RequiredIf.Core/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mLlK1e6AA0x8aVZDn+HEfOszVPYl2xYnXwP1730bulLoplENDglq7LmXsKHLCW1yMU70f8kceg5SQ9ZV8jdDkQ==",
+      "path": "requiredif.core/1.0.0",
+      "hashPath": "requiredif.core.1.0.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.4.0": {
       "type": "package",

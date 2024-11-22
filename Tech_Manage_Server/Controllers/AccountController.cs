@@ -108,6 +108,7 @@ namespace Tech_Manage_Server.Controllers
 
                 return Ok(new
                 {
+                    user.FullName,
                     user.Email,
                     token = new JwtSecurityTokenHandler().WriteToken(token),
                     roles,

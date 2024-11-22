@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Tech_Manage_Server.Data;
-using Tech_Manage_Server.DTOs;
+using Tech_Manage_Server.DTOs.RepairModelDto;
 using Tech_Manage_Server.Models;
 using Tech_Manage_Server.Repositories.Interface;
 
@@ -12,12 +13,16 @@ namespace Tech_Manage_Server.Controllers
     [ApiController]
     public class RepairController : ControllerBase
     {
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly ManageDBContext _dbContext;
         private readonly IRepairRepository _repairRepository;
         private readonly IMapper _mapper;
 
-        public RepairController(ManageDBContext dbContext, IRepairRepository repairRepository, IMapper mapper)
+        public RepairController(IUnitOfWork unitOfWork, UserManager<ApplicationUser> userManager,  ManageDBContext dbContext, IRepairRepository repairRepository, IMapper mapper)
         {
+            _unitOfWork = unitOfWork;
+            _userManager = userManager;
             _dbContext = dbContext;
             _repairRepository = repairRepository;
             _mapper = mapper;
@@ -26,8 +31,72 @@ namespace Tech_Manage_Server.Controllers
         [HttpPost("CreateRepair")]
         public async Task<ActionResult<Repair>> CreateRepair([FromBody] CreateRepairDto createRepairDto)
         {
-            var result = await _repairRepository.CreateRepairAsync(createRepairDto);
-            return Ok(result);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            using var transaction = await _unitOfWork.BeginTransactionAsync();
+
+            try
+            {
+                Customer customer;
+
+                // Kiểm tra xem khách hàng đã tồn tại chưa dựa trên số điện thoại
+                customer = await _unitOfWork.Customers.GetCustomerByPhoneNumberAsync(createRepairDto.PhoneNumber);
+
+                if (customer != null)
+                {
+                    // Khách hàng đã tồn tại
+                    // Kiểm tra xem khách hàng có tài khoản hay không
+                    bool hasAccount = !string.IsNullOrEmpty(customer.UserId.ToString());
+                    // Có thể sử dụng thông tin này để hiển thị cho Admin
+                }
+                else
+                {
+                    // Tạo mới Customer
+                    customer = new Customer
+                    {
+                        FullName = createRepairDto.FullName,
+                        PhoneNumber = createRepairDto.PhoneNumber,
+                        Address = createRepairDto.Address,
+                        CreatedAt = DateTime.UtcNow
+                    };
+
+                    if (createRepairDto.CreateAccount)
+                    {
+                        // Tạo tài khoản cho khách hàng
+                        var user = new ApplicationUser
+                        {
+                            PhoneNumber = createRepairDto.PhoneNumber
+                        };
+
+                        var result = await _userManager.CreateAsync(user, createRepairDto.Password);
+
+                        if (!result.Succeeded)
+                        {
+                            return BadRequest(result.Errors);
+                        }
+
+                        // Liên kết với Customer
+                        customer.UserId = user.Id;
+                    }
+
+                    await _unitOfWork.Customers.AddCustomerAsync(customer);
+                    await _unitOfWork.CompleteAsync();
+                }
+
+
+
+            }
+            catch (Exception ex)
+            {
+                await transaction.RollbackAsync();
+                // Log lỗi nếu cần
+                return StatusCode(500, "Internal server error.");
+            }
+            return Ok(createRepairDto);
+
         }
 
         [HttpGet("GetAllRepair")]

@@ -1,10 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Tech_Manage_Server.Models
+namespace Tech_Manage_Server.DTOs.InventoryModelDto
 {
-    public class Inventory // Kho linh kiện
+    public class InventoryDto
     {
-        [Key]
         public int InventoryId { get; set; }
 
         [Required]
@@ -18,9 +17,5 @@ namespace Tech_Manage_Server.Models
         public int ReorderLevel { get; set; } // cấp độ kho hàng, 1 là đầy kho, 2 là vừa, 3 hàng sắp hết
 
         public decimal Price { get; set; }
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-
-        // Navigation properties
-        public ICollection<RepairItem> RepairItems { get; set; }
     }
 }

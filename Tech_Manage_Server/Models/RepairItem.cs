@@ -13,7 +13,7 @@ namespace Tech_Manage_Server.Models
         public Repair Repair { get; set; }
 
         [ForeignKey("Inventory")]
-        public int ItemId { get; set; }
+        public int InventoryId { get; set; }
         public Inventory Inventory { get; set; }
 
         public int Quantity { get; set; }

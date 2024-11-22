@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 using Tech_Manage_Server.Data;
-using Tech_Manage_Server.DTOs;
+using Tech_Manage_Server.DTOs.RepairModelDto;
 using Tech_Manage_Server.Helpers;
 using Tech_Manage_Server.Models;
 using Tech_Manage_Server.Repositories.Interface;
@@ -22,19 +22,19 @@ namespace Tech_Manage_Server.Repositories.Implementation
 
         public async Task<Response<Repair>> CreateRepairAsync(CreateRepairDto createRepairDto)
         {
-            var checkCustomer = await _dbContext.Customers.FindAsync(createRepairDto.CustomerId);
+            var checkCustomer = await _dbContext.Customers.FindAsync(createRepairDto); // gốc là createRepairDto.CustomerId
             if (checkCustomer == null)
             {
                 var addRepairVip = _mapper.Map<Repair>(createRepairDto);
                 addRepairVip.CreationDate = DateTime.Now;
                 addRepairVip.Status = "PROGRESS";
                 addRepairVip.IsDelete = false;
-                addRepairVip.CustomerId = createRepairDto.CustomerId; // Chỉ cần tên biến Id trùng với tên biến Id của Customer là dc, CustomerId = Customer.CustomerId
-                addRepairVip.Customer = new Customer
-                {
-                    FullName = createRepairDto.Customer.FullName,
-                    PhoneNumber = createRepairDto.Customer.PhoneNumber
-                };
+                //addRepairVip.CustomerId = createRepairDto.CustomerId; // Chỉ cần tên biến Id trùng với tên biến Id của Customer là dc, CustomerId = Customer.CustomerId
+                //addRepairVip.Customer = new Customer
+                //{
+                //    FullName = createRepairDto.Customer.FullName,
+                //    PhoneNumber = createRepairDto.Customer.PhoneNumber
+                //};
 
                 await _dbContext.Repairs.AddAsync(addRepairVip);
                 await _dbContext.SaveChangesAsync();

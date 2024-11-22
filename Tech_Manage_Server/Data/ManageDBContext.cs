@@ -56,7 +56,7 @@ namespace Tech_Manage_Server.Data
             modelBuilder.Entity<RepairItem>()
                 .HasOne(oi => oi.Inventory)
                 .WithMany(ii => ii.RepairItems)
-                .HasForeignKey(oi => oi.ItemId);
+                .HasForeignKey(oi => oi.InventoryId);
 
             // Cấu hình quan hệ giữa Order và Invoice
             modelBuilder.Entity<Repair>()

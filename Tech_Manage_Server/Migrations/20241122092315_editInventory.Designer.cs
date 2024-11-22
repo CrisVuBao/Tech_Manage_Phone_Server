@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Tech_Manage_Server.Data;
 
@@ -11,9 +12,11 @@ using Tech_Manage_Server.Data;
 namespace Tech_Manage_Server.Migrations
 {
     [DbContext(typeof(ManageDBContext))]
-    partial class ManageDBContextModelSnapshot : ModelSnapshot
+    [Migration("20241122092315_editInventory")]
+    partial class editInventory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

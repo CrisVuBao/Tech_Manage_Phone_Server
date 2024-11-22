@@ -160,3 +160,4 @@ D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\obj\Debug\net
 D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\obj\Debug\net9.0\ref\Tech_Manage_Server.dll
 D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\bin\Debug\net9.0\RequiredIf.Core.dll

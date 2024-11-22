@@ -1,4 +1,4 @@
-﻿using Tech_Manage_Server.DTOs;
+﻿using Tech_Manage_Server.DTOs.RepairModelDto;
 using Tech_Manage_Server.Helpers;
 using Tech_Manage_Server.Models;
 

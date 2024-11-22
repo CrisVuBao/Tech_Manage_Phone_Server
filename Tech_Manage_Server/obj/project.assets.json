@@ -1111,6 +1111,15 @@
           "buildTransitive/Mono.TextTemplating.targets": {}
         }
       },
+      "RequiredIf.Core/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/RequiredIf.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/RequiredIf.Core.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/6.4.0": {
         "type": "package",
         "dependencies": {
@@ -4039,6 +4048,18 @@
         "readme.md"
       ]
     },
+    "RequiredIf.Core/1.0.0": {
+      "sha512": "mLlK1e6AA0x8aVZDn+HEfOszVPYl2xYnXwP1730bulLoplENDglq7LmXsKHLCW1yMU70f8kceg5SQ9ZV8jdDkQ==",
+      "type": "package",
+      "path": "requiredif.core/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/RequiredIf.Core.dll",
+        "requiredif.core.1.0.0.nupkg.sha512",
+        "requiredif.core.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.4.0": {
       "sha512": "eUBr4TW0up6oKDA5Xwkul289uqSMgY0xGN4pnbOIBqCcN9VKGGaPvHX3vWaG/hvocfGDP+MGzMA0bBBKz2fkmQ==",
       "type": "package",
@@ -5156,6 +5177,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
+      "RequiredIf.Core >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -5243,6 +5265,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[9.0.0, )"
+          },
+          "RequiredIf.Core": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
