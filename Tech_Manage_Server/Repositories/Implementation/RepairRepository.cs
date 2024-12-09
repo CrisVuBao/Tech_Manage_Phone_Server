@@ -14,88 +14,94 @@ namespace Tech_Manage_Server.Repositories.Implementation
         private readonly ManageDBContext _dbContext;
         private readonly IMapper _mapper;
 
-        public RepairRepository(ManageDBContext dbContext, IMapper mapper)
+        public RepairRepository(ManageDBContext dbContext)
         {
             _dbContext = dbContext;
-            _mapper = mapper;
         }
 
-        public async Task<Response<Repair>> CreateRepairAsync(CreateRepairDto createRepairDto)
+        public async Task CreateRepairAsync(Repair repair)
         {
-            var checkCustomer = await _dbContext.Customers.FindAsync(createRepairDto); // gốc là createRepairDto.CustomerId
-            if (checkCustomer == null)
-            {
-                var addRepairVip = _mapper.Map<Repair>(createRepairDto);
-                addRepairVip.CreationDate = DateTime.Now;
-                addRepairVip.Status = "PROGRESS";
-                addRepairVip.IsDelete = false;
+            await _dbContext.Repairs.AddAsync(repair);
+
+                //var addRepairVip = _mapper.Map<Repair>(createRepairDto);
+                //addRepairVip.CreationDate = DateTime.Now;
+                //addRepairVip.Status = "PROGRESS";
+                //addRepairVip.IsDelete = false;
                 //addRepairVip.CustomerId = createRepairDto.CustomerId; // Chỉ cần tên biến Id trùng với tên biến Id của Customer là dc, CustomerId = Customer.CustomerId
                 //addRepairVip.Customer = new Customer
                 //{
                 //    FullName = createRepairDto.Customer.FullName,
                 //    PhoneNumber = createRepairDto.Customer.PhoneNumber
                 //};
-
-                await _dbContext.Repairs.AddAsync(addRepairVip);
-                await _dbContext.SaveChangesAsync();
-
-                return Response<Repair>.SuccessResult("Thêm sửa chữa thành công", addRepairVip);
-            }
-            return Response<Repair>.Failure("Lỗi");
         }
 
         public async Task<List<Repair>> GetAllRepairAsync()
         {
             var getAllRepair = await _dbContext.Repairs
-                .Include(r => r.Customer)
                 .OrderByDescending(r => r.CreationDate)
-                .Select(r => new Repair
-                {
-                    RepairId = r.RepairId,
-                    DeviceName = r.DeviceName,
-                    ErrorCondition = r.ErrorCondition,
-                    ImageUrl = r.ImageUrl,
-                    Lend = r.Lend,
-                    CreationDate = r.CreationDate,
-                    ReturnDate = r.ReturnDate,
-                    TotalAmount = r.TotalAmount,
-                    Note = r.Note,
-                    IsDelete = r.IsDelete,
-                    Status = r.Status,
-                    CustomerId = r.CustomerId,
-                    Customer = r.Customer
-                })
+                .Include(r => r.Customer)
+                .Include(i => i.RepairItems)
+                    .ThenInclude(i => i.Inventory)
                 .ToListAsync();
 
+
+            //.Select(r => new Repair
+            //{
+            //    RepairId = r.RepairId,
+            //    DeviceName = r.DeviceName,
+            //    ErrorCondition = r.ErrorCondition,
+            //    ImageUrl = r.ImageUrl,
+            //    Lend = r.Lend,
+            //    CreationDate = r.CreationDate,
+            //    ReturnDate = r.ReturnDate,
+            //    TotalAmount = r.TotalAmount,
+            //    Note = r.Note,
+            //    IsDelete = r.IsDelete,
+            //    Status = r.Status,
+            //    CustomerId = r.CustomerId,
+            //    Customer = r.Customer
+            //})
+
+
             return getAllRepair;
+        }
+
+        public async Task<IEnumerable<Repair>> GetOrdersByCustomerIdAsync(int customerId)
+        {
+            var getOrdersByCustomerId = await _dbContext.Repairs
+                    .Where(r => r.CustomerId == customerId)
+                    .OrderByDescending(r => r.CreationDate)
+                    .Include(r => r.Customer)
+                    .Include(i => i.RepairItems)
+                        .ThenInclude(i => i.Inventory)
+                    .ToListAsync();
+
+            return getOrdersByCustomerId;
         }
 
         public async Task<Repair> GetRepairWithIdAsync(int id)
         {
             var getRepairId = await _dbContext.Repairs
                 .Include(i => i.Customer)
+                .Include(i => i.RepairItems)
+                    .ThenInclude(i => i.Inventory)
                 .FirstOrDefaultAsync(r => r.RepairId == id);
             if (getRepairId == null)
             {
                 throw new KeyNotFoundException("Repair not found");
             }
+
             return getRepairId;
         }
 
-        public async Task<Repair> UpdateRepairAsync(Repair repair)
+        public void RemoveRepair(Repair repair)
         {
-            var existingRepair = await _dbContext.Repairs.Include(i => i.Customer)
-            .FirstOrDefaultAsync(x => x.RepairId == repair.RepairId);
-            if (existingRepair != null)
-            {
+            _dbContext.Repairs.Remove(repair);
+        }
 
-
-                _dbContext.Update(existingRepair);
-                await _dbContext.SaveChangesAsync();
-                return existingRepair;
-            }
-
-            return null;
+        public void UpdateRepairAsync(Repair repair)
+        {
+             _dbContext.Repairs.Update(repair);
         }
     }
 }

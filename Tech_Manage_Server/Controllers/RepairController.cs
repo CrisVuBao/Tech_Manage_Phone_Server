@@ -19,13 +19,25 @@ namespace Tech_Manage_Server.Controllers
         private readonly IRepairRepository _repairRepository;
         private readonly IMapper _mapper;
 
-        public RepairController(IUnitOfWork unitOfWork, UserManager<ApplicationUser> userManager,  ManageDBContext dbContext, IRepairRepository repairRepository, IMapper mapper)
+        public RepairController(IUnitOfWork unitOfWork, UserManager<ApplicationUser> userManager, ManageDBContext dbContext, IRepairRepository repairRepository, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _userManager = userManager;
             _dbContext = dbContext;
             _repairRepository = repairRepository;
             _mapper = mapper;
+        }
+
+        [HttpGet("GetRepairById/{id}")]
+        public async Task<ActionResult> GetRepairById(int id)
+        {
+            var repair = await _unitOfWork.Repairs.GetRepairWithIdAsync(id);
+
+            if (repair == null)
+            {
+                return NotFound($"Phiếu sửa chữa với ID {id} không tìm thấy.");
+            }
+            return Ok(repair);
         }
 
         [HttpPost("CreateRepair")]
@@ -68,6 +80,8 @@ namespace Tech_Manage_Server.Controllers
                         // Tạo tài khoản cho khách hàng
                         var user = new ApplicationUser
                         {
+                            UserName = createRepairDto.Email,
+                            Email = createRepairDto.Email,
                             PhoneNumber = createRepairDto.PhoneNumber
                         };
 
@@ -86,8 +100,63 @@ namespace Tech_Manage_Server.Controllers
                     await _unitOfWork.CompleteAsync();
                 }
 
+                // Tạo Repair
+                var repair = _mapper.Map<Repair>(createRepairDto);
+                repair.CustomerId = customer.CustomerId;
+                repair.Status = "InProgress";
+                repair.CreationDate = DateTime.UtcNow;
+                repair.IsDelete = false;
 
+                await _unitOfWork.Repairs.CreateRepairAsync(repair);
+                await _unitOfWork.CompleteAsync();
 
+                // Xử lý RepairItem (nếu có)
+                if (createRepairDto != null && createRepairDto.RepairItems.Any())
+                {
+                    foreach (var itemDto in createRepairDto.RepairItems)
+                    {
+                        // Kiểm tra tồn kho
+                        var inventoryItem = await _unitOfWork.Inventories.GetInventoryByIdAsync(itemDto.InventoryId);
+                        if (inventoryItem == null)
+                        {
+                            return BadRequest($"Linh kiện trong kho với ID {itemDto.InventoryId} không tìm thấy.");
+                        }
+
+                        if (inventoryItem.QuantityInStock < itemDto.Quantity)
+                        {
+                            return BadRequest($"Không đủ hàng cho mặt hàng '{inventoryItem.InventoryName}'. Số lượng có sẵn: {inventoryItem.QuantityInStock}, Số linh kiện yêu cầu: {itemDto.Quantity}.");
+                        }
+
+                        // Tạo RepairItem
+                        var repairItem = _mapper.Map<RepairItem>(itemDto);
+                        repairItem.RepairId = repair.RepairId;
+                        repairItem.Price = inventoryItem.Price;
+
+                        await _unitOfWork.RepairItems.AddRepairItemAsync(repairItem);
+
+                        // Cập nhật số lượng tồn kho
+                        inventoryItem.QuantityInStock -= itemDto.Quantity;
+                        _unitOfWork.Inventories.UpdateInventory(inventoryItem);
+                    }
+
+                    await _unitOfWork.CompleteAsync();
+                }
+
+                // Tính tổng số tiền
+                decimal totalAmount = CalculateTotalAmount(createRepairDto);
+
+                var repairDto = _mapper.Map<RepairDto>(repair);
+                //var repairDto = new RepairDto
+                //{
+                //    DeviceName = repair.DeviceName,
+                //    CreationDate = DateTime.Now,
+                //    ErrorCondition = repair.ErrorCondition,
+                //    Feedbacks = repair.Feedbacks,
+                //    Employee = repair.Employee
+                //};
+                await transaction.CommitAsync();
+                //await _unitOfWork.CompleteAsync();
+                return CreatedAtAction(nameof(GetRepairById), new { id = repair.RepairId }, repairDto);
             }
             catch (Exception ex)
             {
@@ -95,8 +164,6 @@ namespace Tech_Manage_Server.Controllers
                 // Log lỗi nếu cần
                 return StatusCode(500, "Internal server error.");
             }
-            return Ok(createRepairDto);
-
         }
 
         [HttpGet("GetAllRepair")]
@@ -106,44 +173,33 @@ namespace Tech_Manage_Server.Controllers
             return Ok(result);
         }
 
-        [HttpGet("GetRepairById/{id}")]
-        public async Task<ActionResult<Repair>> GetRepairById(int id)
-        {
-            var result = await _repairRepository.GetRepairWithIdAsync(id);
-            return Ok(result);
-        }
 
         [HttpPut("UpdateRepair/{id}")]
         public async Task<ActionResult<Repair>> UpdateRepair(int id, UpdateRepairDto updateRepairDto)
         {
-            var repair = new Repair
-            {
-                RepairId = id,
-                DeviceName = updateRepairDto.DeviceName,
-                ErrorCondition = updateRepairDto.ErrorCondition,
-                ImageUrl = updateRepairDto.ImageUrl,
-                Lend = updateRepairDto.Lend,
-                CreationDate = updateRepairDto.CreationDate,
-                ReturnDate = updateRepairDto.ReturnDate,
-                TotalAmount = updateRepairDto.TotalAmount,
-                Note = updateRepairDto.Note,
-                IsDelete = updateRepairDto.IsDelete,
-                Status = updateRepairDto.Status,
-                CustomerId = updateRepairDto.CustomerId,
-                Customer = updateRepairDto.Customer
-            };
 
-            repair = await _repairRepository.UpdateRepairAsync(repair);
+            return Ok();
+        }
 
-            if (repair == null)
+        private decimal CalculateTotalAmount(CreateRepairDto createRepairDto)
+        {
+            decimal total = 0;
+
+            // Tính tổng tiền cho các linh kiện
+            if (createRepairDto != null && createRepairDto.RepairItems.Any())
             {
-                return NotFound();
+                foreach (var item in createRepairDto.RepairItems)
+                {
+                    var inventory = _unitOfWork.Inventories.GetInventoryByIdAsync(item.InventoryId).Result;
+                    if (inventory != null)
+                    {
+                        total += inventory.Price * item.Quantity;
+                    }
+                }
             }
 
-            var response = _mapper.Map<Repair>(repair);
-            response.Customer = repair.Customer;
-
-            return Ok(response);
+            return total;
         }
     }
+
 }

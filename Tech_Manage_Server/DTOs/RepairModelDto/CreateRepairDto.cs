@@ -1,5 +1,6 @@
 ﻿using RequiredIf.Core;
 using System.ComponentModel.DataAnnotations;
+using Tech_Manage_Server.DTOs.RepairItemModelDto;
 using Tech_Manage_Server.Models;
 
 namespace Tech_Manage_Server.DTOs.RepairModelDto
@@ -24,6 +25,9 @@ namespace Tech_Manage_Server.DTOs.RepairModelDto
 
         [Required(ErrorMessage = "Yêu cầu tên đầy đủ khi tạo khách hàng mới.")]
         public string FullName { get; set; }
+
+        [EmailAddress]
+        public string Email { get; set; }
 
         [MaxLength(200)]
         public string Address { get; set; }

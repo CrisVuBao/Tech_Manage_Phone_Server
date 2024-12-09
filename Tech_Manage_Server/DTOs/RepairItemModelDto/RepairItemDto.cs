@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Tech_Manage_Server.DTOs.RepairModelDto
+namespace Tech_Manage_Server.DTOs.RepairItemModelDto
 {
     public class RepairItemDto
     {

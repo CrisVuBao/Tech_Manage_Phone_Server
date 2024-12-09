@@ -2,6 +2,8 @@
 using System.ComponentModel.DataAnnotations;
 using Tech_Manage_Server.Models;
 using RequiredIf.Core;
+using Tech_Manage_Server.DTOs.CustomerModelDto;
+using Tech_Manage_Server.DTOs.RepairItemModelDto;
 
 namespace Tech_Manage_Server.DTOs.RepairModelDto
 {
@@ -18,23 +20,9 @@ namespace Tech_Manage_Server.DTOs.RepairModelDto
         public bool IsDelete { get; set; }
         public string Status { get; set; } // Received: Đã nhận, InProgress: Đang sửa, Completed: Đã xong
 
-        // Thông tin khách hàng
-        [Phone]
-        [MaxLength(15)]
-        public string PhoneNumber { get; set; }
-
-        [Required(ErrorMessage = "Yêu cầu tên đầy đủ khi tạo khách hàng mới.")]
-        public string FullName { get; set; }
-
-        [MaxLength(200)]
-        public string Address { get; set; }
-
-        // Tùy chọn tạo tài khoản
-        public bool CreateAccount { get; set; } = false;
-
-        // Thông tin đăng nhập (nếu tạo tài khoản)
-        [RequiredIf("CreateAccount", true, ErrorMessage = "Yêu cầu mật khẩu khi tạo tài khoản.")]
-        public string Password { get; set; }
+        public CustomerDto Customer { get; set; }
+        public Employee Employee { get; set; }
         public List<RepairItemDto> RepairItems { get; set; }
+        public ICollection<Feedbacks> Feedbacks { get; set; }
     }
 }

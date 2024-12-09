@@ -8,6 +8,7 @@ namespace Tech_Manage_Server.Models
         [Key]
         public int RepairItemId { get; set; }
 
+
         [ForeignKey("Repair")]
         public int RepairId { get; set; }
         public Repair Repair { get; set; }

@@ -315,6 +315,29 @@
         }
       }
     },
+    "/api/GetRepairById/{id}": {
+      "get": {
+        "tags": [
+          "Repair"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/CreateRepair": {
       "post": {
         "tags": [
@@ -394,46 +417,6 @@
                   "items": {
                     "$ref": "#/components/schemas/Repair"
                   }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/GetRepairById/{id}": {
-      "get": {
-        "tags": [
-          "Repair"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Repair"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Repair"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Repair"
                 }
               }
             }
@@ -754,6 +737,11 @@
           "fullName": {
             "minLength": 1,
             "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "nullable": true
           },
           "address": {
             "maxLength": 200,
@@ -1319,60 +1307,14 @@
         "additionalProperties": false
       },
       "UpdateRepairDto": {
+        "required": [
+          "repairStatus"
+        ],
         "type": "object",
         "properties": {
-          "repairId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "deviceName": {
-            "type": "string",
-            "nullable": true
-          },
-          "errorCondition": {
-            "type": "string",
-            "nullable": true
-          },
-          "currentStatus": {
-            "type": "string",
-            "nullable": true
-          },
-          "imageUrl": {
-            "type": "string",
-            "nullable": true
-          },
-          "lend": {
-            "type": "boolean"
-          },
-          "creationDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "returnDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "totalAmount": {
-            "type": "number",
-            "format": "double"
-          },
-          "note": {
-            "type": "string",
-            "nullable": true
-          },
-          "isDelete": {
-            "type": "boolean"
-          },
-          "status": {
-            "type": "string",
-            "nullable": true
-          },
-          "customerId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "customer": {
-            "$ref": "#/components/schemas/Customer"
+          "repairStatus": {
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false

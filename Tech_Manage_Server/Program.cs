@@ -58,10 +58,12 @@ builder.Services.AddAuthentication(options =>
     });
 
 // Automapper
-builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddAutoMapper(typeof(MappingProfiles));
+//builder.Services.AddAutoMapper(typeof(Program));
 
 // Life cycle DI: AddScoped()
 builder.Services.AddScoped<IRepairRepository, RepairRepository>();
+builder.Services.AddScoped<IRepairItemRepository, RepairItemRepository>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<IInventoryRepository, InventoryRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();

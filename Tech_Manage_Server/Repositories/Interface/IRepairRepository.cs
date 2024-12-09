@@ -8,7 +8,9 @@ namespace Tech_Manage_Server.Repositories.Interface
     {
         Task<List<Repair>> GetAllRepairAsync();
         Task<Repair> GetRepairWithIdAsync(int id);
-        Task<Response<Repair>> CreateRepairAsync(CreateRepairDto createRepairDto);
-        Task<Repair> UpdateRepairAsync(Repair repair);
+        Task<IEnumerable<Repair>> GetOrdersByCustomerIdAsync(int customerId);
+        Task CreateRepairAsync(Repair repair);
+        void UpdateRepairAsync(Repair repair);
+        void RemoveRepair(Repair repair);
     }
 }

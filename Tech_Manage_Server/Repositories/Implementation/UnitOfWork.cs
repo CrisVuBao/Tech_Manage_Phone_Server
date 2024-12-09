@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Transactions;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using Tech_Manage_Server.Data;
 using Tech_Manage_Server.Models;
@@ -9,18 +10,22 @@ namespace Tech_Manage_Server.Repositories.Implementation
     public class UnitOfWork : IUnitOfWork
     {
         private readonly ManageDBContext _manageDBContext;
+        private readonly Transaction transaction;
 
+        public IRepairRepository Repairs { get; private set; }
         public IRepairItemRepository RepairItems { get; private set; }
         public ICustomerRepository Customers { get; private set; }
 
         public IInventoryRepository Inventories { get; private set; }
 
-        public UnitOfWork(ManageDBContext manageDBContext) 
+        public UnitOfWork(ManageDBContext manageDBContext)
         {
             _manageDBContext = manageDBContext;
             RepairItems = new RepairItemRepository(_manageDBContext);
             Customers = new CustomerRepository(_manageDBContext);
             Inventories = new InventoryRepository(_manageDBContext);
+            Repairs = new RepairRepository(_manageDBContext);
+
         }
 
         public async Task<IDbContextTransaction> BeginTransactionAsync()
@@ -28,9 +33,9 @@ namespace Tech_Manage_Server.Repositories.Implementation
             return await _manageDBContext.Database.BeginTransactionAsync();
         }
 
-        public async Task<int> CompleteAsync()
+        public async Task CompleteAsync()
         {
-            return await _manageDBContext.SaveChangesAsync();
+            await _manageDBContext.SaveChangesAsync();
         }
 
         // dùng throw new NotImplementedException(); nếu ko triển khai method
