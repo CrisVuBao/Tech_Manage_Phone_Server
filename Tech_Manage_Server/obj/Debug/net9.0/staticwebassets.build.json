@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "yVVVbHzDt5oYBnQS6LRJvVj1dUCRk4VxtJqzvTyng5g=",
-  "Source": "Tech_Manage_Server",
-  "BasePath": "_content/Tech_Manage_Server",
+  "Hash": "0icOogqk9V37ZpbWzPKI3yN1TssFzjxPw/wgUy9TJTE=",
+  "Source": "Tech_Manage_Server.Api",
+  "BasePath": "_content/Tech_Manage_Server.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

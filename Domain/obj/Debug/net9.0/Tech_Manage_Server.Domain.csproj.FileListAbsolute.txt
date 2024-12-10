@@ -1,0 +1,13 @@
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Domain\obj\Debug\net9.0\Tech_Manage_Server.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Domain\obj\Debug\net9.0\Tech_Manage_Server.Domain.AssemblyInfoInputs.cache
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Domain\obj\Debug\net9.0\Tech_Manage_Server.Domain.AssemblyInfo.cs
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Domain\obj\Debug\net9.0\Tech_Manage_Server.Domain.csproj.CoreCompileInputs.cache
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Domain\obj\Debug\net9.0\Tech_Manage_Server.Domain.sourcelink.json
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Domain\bin\Debug\net9.0\Tech_Manage_Server.Domain.deps.json
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Domain\bin\Debug\net9.0\Tech_Manage_Server.Domain.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Domain\bin\Debug\net9.0\Tech_Manage_Server.Domain.pdb
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Domain\obj\Debug\net9.0\Tech_Manage_Server.Domain.csproj.AssemblyReference.cache
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Domain\obj\Debug\net9.0\Tech_Manage_Server.Domain.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Domain\obj\Debug\net9.0\refint\Tech_Manage_Server.Domain.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Domain\obj\Debug\net9.0\Tech_Manage_Server.Domain.pdb
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Domain\obj\Debug\net9.0\ref\Tech_Manage_Server.Domain.dll

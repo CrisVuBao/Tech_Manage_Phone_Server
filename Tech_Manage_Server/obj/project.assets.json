@@ -1775,6 +1775,51 @@
             "rid": "win"
           }
         }
+      },
+      "Tech_Manage_Server.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "RequiredIf.Core": "1.0.0",
+          "Tech_Manage_Server.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Tech_Manage_Server.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Tech_Manage_Server.Application.dll": {}
+        }
+      },
+      "Tech_Manage_Server.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.0",
+          "Microsoft.Extensions.Identity.Stores": "9.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Tech_Manage_Server.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Tech_Manage_Server.Domain.dll": {}
+        }
+      },
+      "Tech_Manage_Server.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
+          "Tech_Manage_Server.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Tech_Manage_Server.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Tech_Manage_Server.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -5166,6 +5211,21 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Tech_Manage_Server.Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Tech_Manage_Server.Application.csproj",
+      "msbuildProject": "../Application/Tech_Manage_Server.Application.csproj"
+    },
+    "Tech_Manage_Server.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Tech_Manage_Server.Domain.csproj",
+      "msbuildProject": "../Domain/Tech_Manage_Server.Domain.csproj"
+    },
+    "Tech_Manage_Server.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure/Tech_Manage_Server.Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Tech_Manage_Server.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5178,7 +5238,9 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
       "RequiredIf.Core >= 1.0.0",
-      "Swashbuckle.AspNetCore >= 6.4.0"
+      "Swashbuckle.AspNetCore >= 6.4.0",
+      "Tech_Manage_Server.Application >= 1.0.0",
+      "Tech_Manage_Server.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5189,9 +5251,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Tech_Manage_Server.csproj",
-      "projectName": "Tech_Manage_Server",
-      "projectPath": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Tech_Manage_Server.csproj",
+      "projectUniqueName": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Tech_Manage_Server.Api.csproj",
+      "projectName": "Tech_Manage_Server.Api",
+      "projectPath": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Tech_Manage_Server.Api.csproj",
       "packagesPath": "C:\\Users\\Cris_Bao\\.nuget\\packages\\",
       "outputPath": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\obj\\",
       "projectStyle": "PackageReference",
@@ -5215,7 +5277,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Tech_Manage_Server.Application.csproj": {
+              "projectPath": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Tech_Manage_Server.Application.csproj"
+            },
+            "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Tech_Manage_Server.Infrastructure.csproj": {
+              "projectPath": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Tech_Manage_Server.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

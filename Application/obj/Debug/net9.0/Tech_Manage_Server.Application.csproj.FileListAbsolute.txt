@@ -1,0 +1,16 @@
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\obj\Debug\net9.0\Tech_Manage_Server.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\obj\Debug\net9.0\Tech_Manage_Server.Application.AssemblyInfoInputs.cache
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\obj\Debug\net9.0\Tech_Manage_Server.Application.AssemblyInfo.cs
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\obj\Debug\net9.0\Tech_Manage_Server.Application.csproj.CoreCompileInputs.cache
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\obj\Debug\net9.0\Tech_Manage_Server.Application.sourcelink.json
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\bin\Debug\net9.0\Tech_Manage_Server.Application.deps.json
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\bin\Debug\net9.0\Tech_Manage_Server.Application.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\bin\Debug\net9.0\Tech_Manage_Server.Application.pdb
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\bin\Debug\net9.0\Tech_Manage_Server.Domain.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\bin\Debug\net9.0\Tech_Manage_Server.Domain.pdb
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\obj\Debug\net9.0\Tech_Manage_Server.Application.csproj.AssemblyReference.cache
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\obj\Debug\net9.0\Tech_Man.5DF9CB70.Up2Date
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\obj\Debug\net9.0\Tech_Manage_Server.Application.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\obj\Debug\net9.0\refint\Tech_Manage_Server.Application.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\obj\Debug\net9.0\Tech_Manage_Server.Application.pdb
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\obj\Debug\net9.0\ref\Tech_Manage_Server.Application.dll

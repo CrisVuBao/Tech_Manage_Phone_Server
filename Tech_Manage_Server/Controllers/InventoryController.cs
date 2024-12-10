@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
+using Domain.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Tech_Manage_Server.DTOs.InventoryModelDto;
 using Tech_Manage_Server.Models;
-using Tech_Manage_Server.Repositories.Interface;
 
 namespace Tech_Manage_Server.Controllers
 {

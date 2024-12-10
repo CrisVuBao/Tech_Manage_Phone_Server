@@ -1,0 +1,16 @@
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Infrastructure\obj\Debug\net9.0\Tech_Manage_Server.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Infrastructure\obj\Debug\net9.0\Tech_Manage_Server.Infrastructure.AssemblyInfoInputs.cache
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Infrastructure\obj\Debug\net9.0\Tech_Manage_Server.Infrastructure.AssemblyInfo.cs
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Infrastructure\obj\Debug\net9.0\Tech_Manage_Server.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Infrastructure\obj\Debug\net9.0\Tech_Manage_Server.Infrastructure.sourcelink.json
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Infrastructure\obj\Debug\net9.0\Tech_Manage_Server.Infrastructure.csproj.AssemblyReference.cache
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Infrastructure\bin\Debug\net9.0\Tech_Manage_Server.Infrastructure.deps.json
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Infrastructure\bin\Debug\net9.0\Tech_Manage_Server.Infrastructure.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Infrastructure\bin\Debug\net9.0\Tech_Manage_Server.Infrastructure.pdb
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Infrastructure\bin\Debug\net9.0\Tech_Manage_Server.Domain.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Infrastructure\bin\Debug\net9.0\Tech_Manage_Server.Domain.pdb
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Infrastructure\obj\Debug\net9.0\Tech_Man.A652832F.Up2Date
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Infrastructure\obj\Debug\net9.0\Tech_Manage_Server.Infrastructure.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Infrastructure\obj\Debug\net9.0\refint\Tech_Manage_Server.Infrastructure.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Infrastructure\obj\Debug\net9.0\Tech_Manage_Server.Infrastructure.pdb
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Infrastructure\obj\Debug\net9.0\ref\Tech_Manage_Server.Infrastructure.dll

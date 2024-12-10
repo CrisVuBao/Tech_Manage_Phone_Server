@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
+using Domain.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Tech_Manage_Server.Data;
 using Tech_Manage_Server.DTOs.RepairModelDto;
 using Tech_Manage_Server.Models;
-using Tech_Manage_Server.Repositories.Interface;
 
 namespace Tech_Manage_Server.Controllers
 {

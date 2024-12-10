@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R5SQhfW2uaU=",
+  "dgSpecHash": "LdTVglgyru4=",
   "success": true,
-  "projectFilePath": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Tech_Manage_Server.csproj",
+  "projectFilePath": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Tech_Manage_Server.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cris_Bao\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Cris_Bao\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

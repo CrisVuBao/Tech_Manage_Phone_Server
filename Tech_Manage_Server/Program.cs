@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Domain.Interface;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -10,7 +11,6 @@ using Tech_Manage_Server.Data;
 using Tech_Manage_Server.Helpers;
 using Tech_Manage_Server.Models;
 using Tech_Manage_Server.Repositories.Implementation;
-using Tech_Manage_Server.Repositories.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
