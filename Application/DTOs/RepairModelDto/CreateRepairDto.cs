@@ -32,12 +32,13 @@ namespace Tech_Manage_Server.DTOs.RepairModelDto
         [MaxLength(200)]
         public string Address { get; set; }
 
-        // Tùy chọn tạo tài khoản
-        public bool CreateAccount { get; set; } = false;
+        //// Tùy chọn tạo tài khoản
+        //public bool CreateAccount { get; set; } = false;
 
-        // Thông tin đăng nhập (nếu tạo tài khoản)
-        [RequiredIf("CreateAccount", true, ErrorMessage = "Yêu cầu mật khẩu khi tạo tài khoản.")]
-        public string Password { get; set; }
+        //// Thông tin đăng nhập (nếu tạo tài khoản)
+        //[RequiredIf("CreateAccount", true, ErrorMessage = "Yêu cầu mật khẩu khi tạo tài khoản.")]
+        //public string Password { get; set; }
+
         public List<RepairItemDto> RepairItems { get; set; }
     }
 }

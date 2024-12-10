@@ -32,12 +32,13 @@ namespace Tech_Manage_Server.Controllers
         public async Task<ActionResult> GetRepairById(int id)
         {
             var repair = await _unitOfWork.Repairs.GetRepairWithIdAsync(id);
+            var repairMap = _mapper.Map<RepairDto>(repair);
 
             if (repair == null)
             {
                 return NotFound($"Phiếu sửa chữa với ID {id} không tìm thấy.");
             }
-            return Ok(repair);
+            return Ok(repairMap);
         }
 
         [HttpPost("CreateRepair")]
@@ -75,26 +76,26 @@ namespace Tech_Manage_Server.Controllers
                         CreatedAt = DateTime.UtcNow
                     };
 
-                    if (createRepairDto.CreateAccount)
-                    {
-                        // Tạo tài khoản cho khách hàng
-                        var user = new ApplicationUser
-                        {
-                            UserName = createRepairDto.Email,
-                            Email = createRepairDto.Email,
-                            PhoneNumber = createRepairDto.PhoneNumber
-                        };
+                    //if (createRepairDto.CreateAccount)
+                    //{
+                    //    // Tạo tài khoản cho khách hàng
+                    //    var user = new ApplicationUser
+                    //    {
+                    //        UserName = createRepairDto.Email,
+                    //        Email = createRepairDto.Email,
+                    //        PhoneNumber = createRepairDto.PhoneNumber
+                    //    };
 
-                        var result = await _userManager.CreateAsync(user, createRepairDto.Password);
+                    //    var result = await _userManager.CreateAsync(user, createRepairDto.Password);
 
-                        if (!result.Succeeded)
-                        {
-                            return BadRequest(result.Errors);
-                        }
+                    //    if (!result.Succeeded)
+                    //    {
+                    //        return BadRequest(result.Errors);
+                    //    }
 
-                        // Liên kết với Customer
-                        customer.UserId = user.Id;
-                    }
+                    //    // Liên kết với Customer
+                    //    customer.UserId = user.Id;
+                    //}
 
                     await _unitOfWork.Customers.AddCustomerAsync(customer);
                     await _unitOfWork.CompleteAsync();
@@ -103,7 +104,7 @@ namespace Tech_Manage_Server.Controllers
                 // Tạo Repair
                 var repair = _mapper.Map<Repair>(createRepairDto);
                 repair.CustomerId = customer.CustomerId;
-                repair.Status = "InProgress";
+                repair.Status = "PROGRESS";
                 repair.CreationDate = DateTime.UtcNow;
                 repair.IsDelete = false;
 
@@ -170,7 +171,8 @@ namespace Tech_Manage_Server.Controllers
         public async Task<ActionResult<List<Repair>>> GetAllRepair()
         {
             var result = await _repairRepository.GetAllRepairAsync();
-            return Ok(result);
+            var repairMap = _mapper.Map<List<RepairDto>>(result);
+            return Ok(repairMap);
         }
 
 

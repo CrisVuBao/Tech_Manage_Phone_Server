@@ -685,8 +685,7 @@
       },
       "CreateRepairDto": {
         "required": [
-          "fullName",
-          "password"
+          "fullName"
         ],
         "type": "object",
         "properties": {
@@ -747,13 +746,6 @@
             "maxLength": 200,
             "type": "string",
             "nullable": true
-          },
-          "createAccount": {
-            "type": "boolean"
-          },
-          "password": {
-            "minLength": 1,
-            "type": "string"
           },
           "repairItems": {
             "type": "array",

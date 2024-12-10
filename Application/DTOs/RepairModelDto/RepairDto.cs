@@ -9,6 +9,7 @@ namespace Tech_Manage_Server.DTOs.RepairModelDto
 {
     public class RepairDto
     {
+        public int RepairId { get; set; }
         public string DeviceName { get; set; }
         public string ErrorCondition { get; set; }
         public string ImageUrl { get; set; }
