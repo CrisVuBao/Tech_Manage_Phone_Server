@@ -482,6 +482,29 @@
           }
         }
       }
+    },
+    "/api/UpdateStatusRepair/{id}": {
+      "put": {
+        "tags": [
+          "Repair"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -737,21 +760,9 @@
             "minLength": 1,
             "type": "string"
           },
-          "email": {
-            "type": "string",
-            "format": "email",
-            "nullable": true
-          },
           "address": {
             "maxLength": 200,
             "type": "string",
-            "nullable": true
-          },
-          "repairItems": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/RepairItemDto"
-            },
             "nullable": true
           }
         },
@@ -1217,26 +1228,6 @@
           "createdAt": {
             "type": "string",
             "format": "date-time"
-          }
-        },
-        "additionalProperties": false
-      },
-      "RepairItemDto": {
-        "required": [
-          "inventoryId",
-          "quantity"
-        ],
-        "type": "object",
-        "properties": {
-          "inventoryId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "quantity": {
-            "maximum": 2147483647,
-            "minimum": 1,
-            "type": "integer",
-            "format": "int32"
           }
         },
         "additionalProperties": false

@@ -9,6 +9,7 @@ namespace Domain.Interface
         Task<IEnumerable<Repair>> GetOrdersByCustomerIdAsync(int customerId);
         Task CreateRepairAsync(Repair repair);
         void UpdateRepairAsync(Repair repair);
+        void UpdateStatusRepairAsync(int id);
         void RemoveRepair(Repair repair);
     }
 }

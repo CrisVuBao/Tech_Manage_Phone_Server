@@ -111,40 +111,40 @@ namespace Tech_Manage_Server.Controllers
                 await _unitOfWork.Repairs.CreateRepairAsync(repair);
                 await _unitOfWork.CompleteAsync();
 
-                // Xử lý RepairItem (nếu có)
-                if (createRepairDto != null && createRepairDto.RepairItems.Any())
-                {
-                    foreach (var itemDto in createRepairDto.RepairItems)
-                    {
-                        // Kiểm tra tồn kho
-                        var inventoryItem = await _unitOfWork.Inventories.GetInventoryByIdAsync(itemDto.InventoryId);
-                        if (inventoryItem == null)
-                        {
-                            return BadRequest($"Linh kiện trong kho với ID {itemDto.InventoryId} không tìm thấy.");
-                        }
+                //// Xử lý RepairItem (nếu có)
+                //if (createRepairDto != null && createRepairDto.RepairItems.Any())
+                //{
+                //    foreach (var itemDto in createRepairDto.RepairItems)
+                //    {
+                //        // Kiểm tra tồn kho
+                //        var inventoryItem = await _unitOfWork.Inventories.GetInventoryByIdAsync(itemDto.InventoryId);
+                //        if (inventoryItem == null)
+                //        {
+                //            return BadRequest($"Linh kiện trong kho với ID {itemDto.InventoryId} không tìm thấy.");
+                //        }
 
-                        if (inventoryItem.QuantityInStock < itemDto.Quantity)
-                        {
-                            return BadRequest($"Không đủ hàng cho mặt hàng '{inventoryItem.InventoryName}'. Số lượng có sẵn: {inventoryItem.QuantityInStock}, Số linh kiện yêu cầu: {itemDto.Quantity}.");
-                        }
+                //        if (inventoryItem.QuantityInStock < itemDto.Quantity)
+                //        {
+                //            return BadRequest($"Không đủ hàng cho mặt hàng '{inventoryItem.InventoryName}'. Số lượng có sẵn: {inventoryItem.QuantityInStock}, Số linh kiện yêu cầu: {itemDto.Quantity}.");
+                //        }
 
-                        // Tạo RepairItem
-                        var repairItem = _mapper.Map<RepairItem>(itemDto);
-                        repairItem.RepairId = repair.RepairId;
-                        repairItem.Price = inventoryItem.Price;
+                //        // Tạo RepairItem
+                //        var repairItem = _mapper.Map<RepairItem>(itemDto);
+                //        repairItem.RepairId = repair.RepairId;
+                //        repairItem.Price = inventoryItem.Price;
 
-                        await _unitOfWork.RepairItems.AddRepairItemAsync(repairItem);
+                //        await _unitOfWork.RepairItems.AddRepairItemAsync(repairItem);
 
-                        // Cập nhật số lượng tồn kho
-                        inventoryItem.QuantityInStock -= itemDto.Quantity;
-                        _unitOfWork.Inventories.UpdateInventory(inventoryItem);
-                    }
+                //        // Cập nhật số lượng tồn kho
+                //        inventoryItem.QuantityInStock -= itemDto.Quantity;
+                //        _unitOfWork.Inventories.UpdateInventory(inventoryItem);
+                //    }
 
-                    await _unitOfWork.CompleteAsync();
-                }
+                //    await _unitOfWork.CompleteAsync();
+                //}
 
                 // Tính tổng số tiền
-                decimal totalAmount = CalculateTotalAmount(createRepairDto);
+                //decimal totalAmount = CalculateTotalAmount(createRepairDto);
 
                 var repairDto = _mapper.Map<RepairDto>(repair);
                 //var repairDto = new RepairDto
@@ -183,25 +183,33 @@ namespace Tech_Manage_Server.Controllers
             return Ok();
         }
 
-        private decimal CalculateTotalAmount(CreateRepairDto createRepairDto)
+        [HttpPut("UpdateStatusRepair/{id}")]
+        public ActionResult UpdateStatusRepair(int id)
         {
-            decimal total = 0;
-
-            // Tính tổng tiền cho các linh kiện
-            if (createRepairDto != null && createRepairDto.RepairItems.Any())
-            {
-                foreach (var item in createRepairDto.RepairItems)
-                {
-                    var inventory = _unitOfWork.Inventories.GetInventoryByIdAsync(item.InventoryId).Result;
-                    if (inventory != null)
-                    {
-                        total += inventory.Price * item.Quantity;
-                    }
-                }
-            }
-
-            return total;
+            _repairRepository.UpdateStatusRepairAsync(id);
+            _unitOfWork.CompleteAsync();
+            return Ok();
         }
+
+        //private decimal CalculateTotalAmount(CreateRepairDto createRepairDto)
+        //{
+        //    decimal total = 0;
+
+        //    // Tính tổng tiền cho các linh kiện
+        //    if (createRepairDto != null && createRepairDto.RepairItems.Any())
+        //    {
+        //        foreach (var item in createRepairDto.RepairItems)
+        //        {
+        //            var inventory = _unitOfWork.Inventories.GetInventoryByIdAsync(item.InventoryId).Result;
+        //            if (inventory != null)
+        //            {
+        //                total += inventory.Price * item.Quantity;
+        //            }
+        //        }
+        //    }
+
+        //    return total;
+        //}
     }
 
 }

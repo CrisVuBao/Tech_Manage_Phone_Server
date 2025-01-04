@@ -26,8 +26,8 @@ namespace Tech_Manage_Server.DTOs.RepairModelDto
         [Required(ErrorMessage = "Yêu cầu tên đầy đủ khi tạo khách hàng mới.")]
         public string FullName { get; set; }
 
-        [EmailAddress]
-        public string Email { get; set; }
+        //[EmailAddress]
+        //public string Email { get; set; }
 
         [MaxLength(200)]
         public string Address { get; set; }
@@ -39,6 +39,6 @@ namespace Tech_Manage_Server.DTOs.RepairModelDto
         //[RequiredIf("CreateAccount", true, ErrorMessage = "Yêu cầu mật khẩu khi tạo tài khoản.")]
         //public string Password { get; set; }
 
-        public List<RepairItemDto> RepairItems { get; set; }
+        //public List<RepairItemDto> RepairItems { get; set; }
     }
 }

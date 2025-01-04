@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Domain.Interface;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
 using Tech_Manage_Server.Data;
 using Tech_Manage_Server.Models;
 
@@ -99,6 +100,15 @@ namespace Tech_Manage_Server.Repositories.Implementation
         public void UpdateRepairAsync(Repair repair)
         {
              _dbContext.Repairs.Update(repair);
+        }
+
+        public void UpdateStatusRepairAsync(int id)
+        {
+            var getRepair = _dbContext.Repairs.Find(id);
+
+            // cập nhật status
+            getRepair.Status = "COMPLETED";
+            _dbContext.SaveChanges();
         }
     }
 }

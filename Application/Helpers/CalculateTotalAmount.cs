@@ -12,24 +12,24 @@ namespace Tech_Manage_Server.Helpers
             _unitOfWork = unitOfWork;
         }
 
-        public decimal CalTotalAmount(CreateRepairDto createRepairDto)
-        {
-            decimal total = 0;
+        //public decimal CalTotalAmount(CreateRepairDto createRepairDto)
+        //{
+        //    decimal total = 0;
 
-            // Tính tổng tiền cho các linh kiện
-            if(createRepairDto != null && createRepairDto.RepairItems.Any())
-            {
-                foreach(var item in createRepairDto.RepairItems)
-                {
-                    var inventory =  _unitOfWork.Inventories.GetInventoryByIdAsync(item.InventoryId).Result;
-                    if (inventory != null)
-                    {
-                        total += inventory.Price * item.Quantity;
-                    }
-                }
-            }
+        //    // Tính tổng tiền cho các linh kiện
+        //    if(createRepairDto != null && createRepairDto.RepairItems.Any())
+        //    {
+        //        foreach(var item in createRepairDto.RepairItems)
+        //        {
+        //            var inventory =  _unitOfWork.Inventories.GetInventoryByIdAsync(item.InventoryId).Result;
+        //            if (inventory != null)
+        //            {
+        //                total += inventory.Price * item.Quantity;
+        //            }
+        //        }
+        //    }
 
-            return total;
-        }
+        //    return total;
+        //}
     }
 }
