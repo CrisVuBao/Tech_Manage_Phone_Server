@@ -8,11 +8,14 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="9.0.0" />
     <PackageReference Include="RequiredIf.Core" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Domain\Tech_Manage_Server.Domain.csproj" />
+    <ProjectReference Include="..\Infrastructure\Tech_Manage_Server.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

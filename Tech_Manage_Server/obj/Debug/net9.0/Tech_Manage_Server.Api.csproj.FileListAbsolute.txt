@@ -167,3 +167,9 @@ D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\obj\Debug\net
 D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\obj\Debug\net9.0\Tech_Manage_Server.Api.pdb
 D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\obj\Debug\net9.0\Tech_Manage_Server.Api.genruntimeconfig.cache
 D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\obj\Debug\net9.0\ref\Tech_Manage_Server.Api.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\bin\Debug\net9.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\bin\Debug\net9.0\Microsoft.AspNetCore.SignalR.Client.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\bin\Debug\net9.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\bin\Debug\net9.0\Newtonsoft.Json.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\bin\Debug\net9.0\System.Net.ServerSentEvents.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\bin\Debug\net9.0\System.Net.WebSockets.WebSocketProtocol.dll

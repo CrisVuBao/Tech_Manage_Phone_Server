@@ -14,3 +14,5 @@ D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\obj\Debug\net9.0\Tec
 D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\obj\Debug\net9.0\refint\Tech_Manage_Server.Application.dll
 D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\obj\Debug\net9.0\Tech_Manage_Server.Application.pdb
 D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\obj\Debug\net9.0\ref\Tech_Manage_Server.Application.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\bin\Debug\net9.0\Tech_Manage_Server.Infrastructure.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Application\bin\Debug\net9.0\Tech_Manage_Server.Infrastructure.pdb

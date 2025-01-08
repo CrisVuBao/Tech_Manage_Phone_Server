@@ -3,7 +3,9 @@ using Domain.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Tech_Manage_Server.Application.Helpers;
 using Tech_Manage_Server.Data;
+using Tech_Manage_Server.Domain.Interface;
 using Tech_Manage_Server.DTOs.RepairModelDto;
 using Tech_Manage_Server.Models;
 
@@ -18,14 +20,22 @@ namespace Tech_Manage_Server.Controllers
         private readonly ManageDBContext _dbContext;
         private readonly IRepairRepository _repairRepository;
         private readonly IMapper _mapper;
+        private readonly IImageRepository _imageRepository;
 
-        public RepairController(IUnitOfWork unitOfWork, UserManager<ApplicationUser> userManager, ManageDBContext dbContext, IRepairRepository repairRepository, IMapper mapper)
+        public RepairController(IUnitOfWork unitOfWork, 
+            UserManager<ApplicationUser> userManager, 
+            ManageDBContext dbContext, 
+            IRepairRepository repairRepository, 
+            IMapper mapper,
+            IImageRepository imageRepository
+            )
         {
             _unitOfWork = unitOfWork;
             _userManager = userManager;
             _dbContext = dbContext;
             _repairRepository = repairRepository;
             _mapper = mapper;
+            _imageRepository = imageRepository;
         }
 
         [HttpGet("GetRepairById/{id}")]
@@ -38,6 +48,19 @@ namespace Tech_Manage_Server.Controllers
             {
                 return NotFound($"Phiếu sửa chữa với ID {id} không tìm thấy.");
             }
+            return Ok(repairMap);
+        }
+
+        [HttpGet("GetAllRepairByNumberPhone/{phoneNumber}")]
+        public async Task<ActionResult<List<Repair>>> GetRepairByNumberPhone(string phoneNumber)
+        {
+            var repairByNumberPhone = await _unitOfWork.Repairs.GetRepairByNumberPhone(phoneNumber);
+            var repairMap = _mapper.Map<List<RepairDto>>(repairByNumberPhone);
+            if (repairMap == null)
+            {
+                return NotFound($"Phiếu sửa chữa với số điện thoại {phoneNumber} không tìm thấy.");
+            }
+
             return Ok(repairMap);
         }
 
@@ -73,7 +96,7 @@ namespace Tech_Manage_Server.Controllers
                         FullName = createRepairDto.FullName,
                         PhoneNumber = createRepairDto.PhoneNumber,
                         Address = createRepairDto.Address,
-                        CreatedAt = DateTime.UtcNow
+                        CreatedAt = DateTime.UtcNow,                       
                     };
 
                     //if (createRepairDto.CreateAccount)
@@ -105,8 +128,8 @@ namespace Tech_Manage_Server.Controllers
                 var repair = _mapper.Map<Repair>(createRepairDto);
                 repair.CustomerId = customer.CustomerId;
                 repair.Status = "PROGRESS";
-                repair.CreationDate = DateTime.UtcNow;
-                repair.IsDelete = false;
+                repair.CreationDate = GetVnTime.GetVietnamTime();
+                repair.IsDelete = false;       
 
                 await _unitOfWork.Repairs.CreateRepairAsync(repair);
                 await _unitOfWork.CompleteAsync();
@@ -189,6 +212,36 @@ namespace Tech_Manage_Server.Controllers
             _repairRepository.UpdateStatusRepairAsync(id);
             _unitOfWork.CompleteAsync();
             return Ok();
+        }
+
+        [HttpDelete("DeleteRepairById/{id}")]
+        public ActionResult DeleteRepairById(int id)
+        {
+            _repairRepository.DeleteRepairById(id);
+            return Ok();
+        }
+
+        [HttpPost("UploadImage/{repairId}")]
+        public async Task<ActionResult> UploadImage(int repairId, IFormFile imageUrlFile)
+        {
+            var getRepairById = await _repairRepository.GetRepairWithIdAsync(repairId);
+            // kiểm tra phiếu sửa chữa tồn tại
+            if(getRepairById != null)
+            {
+                var fileName = Guid.NewGuid() + Path.GetExtension(imageUrlFile.FileName);
+
+                var fileImagePath =  await _imageRepository.Upload(imageUrlFile, fileName);
+
+                var getFileImage = await _repairRepository.UploadRepairImageFile(repairId, fileImagePath);
+                if(getFileImage)
+                {
+                    return Ok(fileImagePath);
+                }
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Lỗi up hình ảnh");
+            }
+
+            return NotFound();
         }
 
         //private decimal CalculateTotalAmount(CreateRepairDto createRepairDto)

@@ -32,6 +32,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Tech_Manage_Server.Api.Controllers.MessageController",
+    "Method": "GetConversation",
+    "RelativePath": "api/conversation/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Tech_Manage_Server.Controllers.CustomerController",
     "Method": "CreateCustomer",
     "RelativePath": "api/CreateCustomer",
@@ -122,6 +138,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Tech_Manage_Server.Controllers.RepairController",
+    "Method": "DeleteRepairById",
+    "RelativePath": "api/DeleteRepairById/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Tech_Manage_Server.Controllers.CustomerController",
     "Method": "GetAllCustomers",
     "RelativePath": "api/GetAllCustomers",
@@ -139,6 +171,32 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Tech_Manage_Server.Models.Repair, Tech_Manage_Server.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tech_Manage_Server.Controllers.RepairController",
+    "Method": "GetRepairByNumberPhone",
+    "RelativePath": "api/GetAllRepairByNumberPhone/{phoneNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phoneNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[Tech_Manage_Server.Models.Repair, Tech_Manage_Server.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -193,6 +251,22 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tech_Manage_Server.Api.Controllers.MessageController",
+    "Method": "MarkAsRead",
+    "RelativePath": "api/mark-read/{messageId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -284,6 +358,27 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tech_Manage_Server.Controllers.RepairController",
+    "Method": "UploadImage",
+    "RelativePath": "api/UploadImage/{repairId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "repairId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "imageUrlFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

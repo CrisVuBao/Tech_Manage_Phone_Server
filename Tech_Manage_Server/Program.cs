@@ -1,14 +1,18 @@
 ﻿using Domain.Interface;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using Tech_Manage_Server.Application.Helpers;
 using Tech_Manage_Server.Data;
+using Tech_Manage_Server.Domain.Interface;
 using Tech_Manage_Server.Helpers;
+using Tech_Manage_Server.Infrastructure.Implementation;
 using Tech_Manage_Server.Models;
 using Tech_Manage_Server.Repositories.Implementation;
 
@@ -57,6 +61,20 @@ builder.Services.AddAuthentication(options =>
         };
     });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigins", builder =>
+    {
+        builder.WithOrigins("http://localhost:4100") // URL của Angular
+               .AllowAnyHeader()
+               .AllowAnyMethod()
+               .AllowCredentials(); // Cho phép gửi credentials (cookies, auth headers)
+    });
+});
+
+// Add services to the container.
+builder.Services.AddSignalR();
+
 // Automapper
 builder.Services.AddAutoMapper(typeof(MappingProfiles));
 //builder.Services.AddAutoMapper(typeof(Program));
@@ -67,8 +85,13 @@ builder.Services.AddScoped<IRepairItemRepository, RepairItemRepository>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<IInventoryRepository, InventoryRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IImageRepository, ImageRepository>();
+
+builder.Services.AddSingleton<IUserIdProvider, CustomUserIdProvider>();
 
 var app = builder.Build();
+
+app.UseCors("AllowSpecificOrigins"); // Áp dụng CORS
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -109,5 +132,5 @@ catch (Exception ex)
     logger.LogError(ex, "A problem with migration for database");
 }
 
-
+app.MapHub<ChatHub>("/chatHub");
 app.Run();

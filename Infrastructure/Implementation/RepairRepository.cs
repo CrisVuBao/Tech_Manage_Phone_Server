@@ -64,9 +64,9 @@ namespace Tech_Manage_Server.Repositories.Implementation
             return getAllRepair;
         }
 
-        public async Task<IEnumerable<Repair>> GetOrdersByCustomerIdAsync(int customerId)
+        public async Task<IEnumerable<Repair>> GetRepairByCustomerIdAsync(int customerId)
         {
-            var getOrdersByCustomerId = await _dbContext.Repairs
+            var getRepairByCustomerId = await _dbContext.Repairs
                     .Where(r => r.CustomerId == customerId)
                     .OrderByDescending(r => r.CreationDate)
                     .Include(r => r.Customer)
@@ -74,7 +74,16 @@ namespace Tech_Manage_Server.Repositories.Implementation
                         .ThenInclude(i => i.Inventory)
                     .ToListAsync();
 
-            return getOrdersByCustomerId;
+            return getRepairByCustomerId;
+        }
+
+        public async Task<IEnumerable<Repair>> GetRepairByNumberPhone(string phoneNumber)
+        {
+            var getRepairByNumberPhone = await _dbContext.Repairs.Where(p => p.Customer.PhoneNumber == phoneNumber)
+                .Include(r => r.Customer)
+                .Include(r => r.RepairItems)
+                .ToListAsync();
+            return getRepairByNumberPhone;
         }
 
         public async Task<Repair> GetRepairWithIdAsync(int id)
@@ -109,6 +118,27 @@ namespace Tech_Manage_Server.Repositories.Implementation
             // cập nhật status
             getRepair.Status = "COMPLETED";
             _dbContext.SaveChanges();
+        }
+
+        public void DeleteRepairById(int id)
+        {
+            var getById = _dbContext.Repairs.FirstOrDefault(f => f.RepairId == id);
+            _dbContext.Remove(getById);
+            _dbContext.SaveChanges();
+        }
+
+        public async Task<bool> UploadRepairImageFile(int repairId, string repairImageUrl)
+        {
+            var getRepairById = await GetRepairWithIdAsync(repairId);
+
+            if (getRepairById == null)
+            {
+                getRepairById.ImageUrl = repairImageUrl;
+                await _dbContext.SaveChangesAsync();
+                return true;
+            }
+
+            return false;
         }
     }
 }
