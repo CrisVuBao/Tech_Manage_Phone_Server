@@ -1761,6 +1761,7 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "AutoMapper": "12.0.1",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
           "Tech_Manage_Server.Domain": "1.0.0"

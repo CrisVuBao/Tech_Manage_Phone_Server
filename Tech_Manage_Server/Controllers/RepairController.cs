@@ -221,28 +221,28 @@ namespace Tech_Manage_Server.Controllers
             return Ok();
         }
 
-        [HttpPost("UploadImage/{repairId}")]
-        public async Task<ActionResult> UploadImage(int repairId, IFormFile imageUrlFile)
-        {
-            var getRepairById = await _repairRepository.GetRepairWithIdAsync(repairId);
-            // kiểm tra phiếu sửa chữa tồn tại
-            if(getRepairById != null)
-            {
-                var fileName = Guid.NewGuid() + Path.GetExtension(imageUrlFile.FileName);
+        //[HttpPost("UploadImage/{repairId}")]
+        //public async Task<ActionResult> UploadImage(int repairId, IFormFile imageUrlFile)
+        //{
+        //    var getRepairById = await _repairRepository.GetRepairWithIdAsync(repairId);
+        //    // kiểm tra phiếu sửa chữa tồn tại
+        //    if(getRepairById != null)
+        //    {
+        //        var fileName = Guid.NewGuid() + Path.GetExtension(imageUrlFile.FileName);
 
-                var fileImagePath =  await _imageRepository.Upload(imageUrlFile, fileName);
+        //        var fileImagePath =  await _imageRepository.Upload(imageUrlFile, fileName);
 
-                var getFileImage = await _repairRepository.UploadRepairImageFile(repairId, fileImagePath);
-                if(getFileImage)
-                {
-                    return Ok(fileImagePath);
-                }
+        //        var getFileImage = await _repairRepository.UploadRepairImageFile(repairId, fileImagePath);
+        //        if(getFileImage)
+        //        {
+        //            return Ok(fileImagePath);
+        //        }
 
-                return StatusCode(StatusCodes.Status500InternalServerError, "Lỗi up hình ảnh");
-            }
+        //        return StatusCode(StatusCodes.Status500InternalServerError, "Lỗi up hình ảnh");
+        //    }
 
-            return NotFound();
-        }
+        //    return NotFound();
+        //}
 
         //private decimal CalculateTotalAmount(CreateRepairDto createRepairDto)
         //{

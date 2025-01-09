@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fdfVIS0mfVc=",
+  "dgSpecHash": "Z9ob+VPSgg8=",
   "success": true,
   "projectFilePath": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Tech_Manage_Server.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Cris_Bao\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\Cris_Bao\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\9.0.0\\microsoft.aspnetcore.cryptography.internal.9.0.0.nupkg.sha512",
     "C:\\Users\\Cris_Bao\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\9.0.0\\microsoft.aspnetcore.cryptography.keyderivation.9.0.0.nupkg.sha512",
+    "C:\\Users\\Cris_Bao\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Cris_Bao\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\Cris_Bao\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\9.0.0\\microsoft.aspnetcore.identity.entityframeworkcore.9.0.0.nupkg.sha512",
     "C:\\Users\\Cris_Bao\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

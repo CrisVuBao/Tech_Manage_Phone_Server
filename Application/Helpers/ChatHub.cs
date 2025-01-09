@@ -68,7 +68,7 @@ namespace Tech_Manage_Server.Application.Helpers
         {
             var userId = Context.UserIdentifier;
 
-            await Groups.AddToGroupAsync(Context.ConnectionId, userId);
+             await Groups.AddToGroupAsync(Context.ConnectionId, userId);
             await base.OnConnectedAsync();
         }
     }

@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Tech_Manage_Server.Application.DTOs.ImageDto;
+using Tech_Manage_Server.Domain.Models;
 using Tech_Manage_Server.DTOs.CustomerModelDto;
 using Tech_Manage_Server.DTOs.InventoryModelDto;
 using Tech_Manage_Server.DTOs.RepairItemModelDto;
@@ -30,6 +32,9 @@ namespace Tech_Manage_Server.Helpers
             CreateMap<Customer, CustomerDto>().ReverseMap();
             CreateMap<CreateCustomerDto, Customer>().ReverseMap();
             CreateMap<UpdateCustomerDto, Customer>().ReverseMap();
+
+            // Map Image
+            CreateMap<ImageSource, ImageSourceDto>().ReverseMap();
         }
     }
 }

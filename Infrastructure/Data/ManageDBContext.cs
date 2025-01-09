@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Tech_Manage_Server.Domain.Models;
 using Tech_Manage_Server.Models;
 
 namespace Tech_Manage_Server.Data
@@ -23,6 +24,7 @@ namespace Tech_Manage_Server.Data
         public DbSet<Feedbacks> Feedbacks { get; set; }
         public DbSet<Notifications> Notifications { get; set; }
         public DbSet<AuditLog> AuditLogs { get; set; }
+        public DbSet<ImageSource> ImageSources { get; set; }
         #endregion
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
