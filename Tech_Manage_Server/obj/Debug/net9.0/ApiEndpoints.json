@@ -32,6 +32,52 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Tech_Manage_Server.Controllers.AccountController",
+    "Method": "GetUsers",
+    "RelativePath": "api/Account/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Tech_Manage_Server.Application.DTOs.Auths.UserDto, Tech_Manage_Server.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tech_Manage_Server.Controllers.AccountController",
+    "Method": "GetUser",
+    "RelativePath": "api/Account/users/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tech_Manage_Server.Application.DTOs.Auths.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Tech_Manage_Server.Api.Controllers.MessageController",
     "Method": "GetConversation",
     "RelativePath": "api/conversation/{userId}",
@@ -148,6 +194,22 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tech_Manage_Server.Api.Controllers.GeminiController",
+    "Method": "GenerateChat",
+    "RelativePath": "api/GenerateChat",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "aiChatRes",
+        "Type": "Tech_Manage_Server.Application.Helpers.AIChatRequest",
         "IsRequired": true
       }
     ],

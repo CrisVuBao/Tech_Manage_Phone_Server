@@ -27,10 +27,19 @@ namespace Tech_Manage_Server.Api.Controllers
         public async Task<IActionResult> GetConversation(int userId)
         {
             // Lấy user hiện tại
-            var currentUserId = User.FindFirst("sub")?.Value;
+            //var currentUserId = User.FindFirst("name")?.Value;
+            var currentUserId = User.FindFirst("user_id")?.Value;
+
             if (string.IsNullOrEmpty(currentUserId)) return Unauthorized();
 
-            int senderId = int.Parse(currentUserId);
+            if (!int.TryParse(currentUserId, out int senderId))
+            {
+                return Unauthorized();
+            }
+
+            // Kiểm tra xem người dùng có tồn tại
+            var sender = await _userManager.FindByIdAsync(senderId.ToString());
+            if (sender == null) return Unauthorized();
 
             // Lấy tin nhắn giữa senderId và userId
             var messages = await _context.Messages
@@ -48,7 +57,11 @@ namespace Tech_Manage_Server.Api.Controllers
         {
             var currentUserId = User.FindFirst("sub")?.Value;
             if (string.IsNullOrEmpty(currentUserId)) return Unauthorized();
-            int userId = int.Parse(currentUserId);
+
+            if (!int.TryParse(currentUserId, out int userId))
+            {
+                return Unauthorized();
+            }
 
             var message = await _context.Messages.FindAsync(messageId);
             if (message == null) return NotFound();

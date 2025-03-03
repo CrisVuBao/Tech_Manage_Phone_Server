@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +8,7 @@ using System.ComponentModel.DataAnnotations;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Tech_Manage_Server.Application.DTOs.Auths;
 using Tech_Manage_Server.DTOs.Auth;
 using Tech_Manage_Server.DTOs.Auths;
 using Tech_Manage_Server.Models;
@@ -89,12 +91,12 @@ namespace Tech_Manage_Server.Controllers
                 var userRoles = await _userManager.GetRolesAsync(user);
 
                 var authClaims = new List<Claim>
-        {
-            new Claim(ClaimTypes.Email, user.Id.ToString()),
-            new Claim(ClaimTypes.NameIdentifier, user.Email),
-            new Claim("FullName", user.FullName),
-            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-        };
+                    {
+                        new Claim(ClaimTypes.Email, user.Id.ToString()),
+                        new Claim(ClaimTypes.NameIdentifier, user.Email),
+                        new Claim("FullName", user.FullName),
+                        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                    };
 
                 // Thêm các claims về vai trò
                 foreach (var userRole in userRoles)
@@ -108,6 +110,7 @@ namespace Tech_Manage_Server.Controllers
 
                 return Ok(new
                 {
+                    user.Id,
                     user.FullName,
                     user.Email,
                     token = new JwtSecurityTokenHandler().WriteToken(token),
@@ -119,6 +122,51 @@ namespace Tech_Manage_Server.Controllers
             return Unauthorized(new { message = "Thông tin xác thực không hợp lệ!" });
         }
 
+        [Authorize(Roles = "Admin")]
+        [HttpGet("users")]
+        public async Task<ActionResult<IEnumerable<UserDto>>> GetUsers()
+        {
+            var users = await _userManager.Users.ToListAsync();
+            var userDtos = new List<UserDto>();
+
+            foreach (var user in users)
+            {
+                var roles = await _userManager.GetRolesAsync(user);
+                userDtos.Add(new UserDto
+                {
+                    Id = user.Id,
+                    FullName = user.FullName,
+                    Email = user.Email,
+                    Roles = roles
+                });
+            }
+
+            return Ok(userDtos);
+        }
+
+        [HttpGet("users/{id}")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<UserDto>> GetUser(int id)
+        {
+            var user = await _userManager.Users.FirstOrDefaultAsync(u => u.Id == id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var roles = await _userManager.GetRolesAsync(user);
+
+            var userDto = new UserDto
+            {
+                Id = user.Id,
+                FullName = user.FullName,
+                Email = user.Email,
+                Roles = roles
+            };
+
+            return Ok(userDto);
+        }
 
         private JwtSecurityToken GetToken(List<Claim> authClaims)
         {

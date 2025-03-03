@@ -173,3 +173,4 @@ D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\bin\Debug\net
 D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\bin\Debug\net9.0\Newtonsoft.Json.dll
 D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\bin\Debug\net9.0\System.Net.ServerSentEvents.dll
 D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\bin\Debug\net9.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\Project\Tech_Manage_Phone\Tech_Manage_Server\Tech_Manage_Server\bin\Debug\net9.0\Gemini.NET.dll

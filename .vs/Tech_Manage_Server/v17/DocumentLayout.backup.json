@@ -3,52 +3,128 @@
   "WorkspaceRootPath": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\controllers\\geminicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\controllers\\geminicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\application\\dtos\\imagedto\\imagesourcedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|solutionrelative:application\\dtos\\imagedto\\imagesourcedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\imagesource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\imagesource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF55F8CE-1AB9-46D8-B713-62555323E500}|Infrastructure\\Tech_Manage_Server.Infrastructure.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\infrastructure\\implementation\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF55F8CE-1AB9-46D8-B713-62555323E500}|Infrastructure\\Tech_Manage_Server.Infrastructure.csproj|solutionrelative:infrastructure\\implementation\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\application\\helpers\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|solutionrelative:application\\helpers\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF55F8CE-1AB9-46D8-B713-62555323E500}|Infrastructure\\Tech_Manage_Server.Infrastructure.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\infrastructure\\implementation\\repairrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF55F8CE-1AB9-46D8-B713-62555323E500}|Infrastructure\\Tech_Manage_Server.Infrastructure.csproj|solutionrelative:infrastructure\\implementation\\repairrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\application\\helpers\\aichatrequest .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|solutionrelative:application\\helpers\\aichatrequest .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\controllers\\repaircontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\controllers\\repaircontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\repair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\repair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\repairitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\repairitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\application\\helpers\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|solutionrelative:application\\helpers\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\application\\helpers\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|solutionrelative:application\\helpers\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF55F8CE-1AB9-46D8-B713-62555323E500}|Infrastructure\\Tech_Manage_Server.Infrastructure.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\infrastructure\\implementation\\repairrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF55F8CE-1AB9-46D8-B713-62555323E500}|Infrastructure\\Tech_Manage_Server.Infrastructure.csproj|solutionrelative:infrastructure\\implementation\\repairrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\application\\helpers\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|solutionrelative:application\\helpers\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\interface\\iimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\interface\\iimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\application\\dtos\\auths\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|solutionrelative:application\\dtos\\auths\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\application\\dtos\\auths\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|solutionrelative:application\\dtos\\auths\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\application\\dtos\\auths\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|solutionrelative:application\\dtos\\auths\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\controllers\\repaircontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\controllers\\repaircontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\interface\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\interface\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF55F8CE-1AB9-46D8-B713-62555323E500}|Infrastructure\\Tech_Manage_Server.Infrastructure.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\infrastructure\\implementation\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF55F8CE-1AB9-46D8-B713-62555323E500}|Infrastructure\\Tech_Manage_Server.Infrastructure.csproj|solutionrelative:infrastructure\\implementation\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF55F8CE-1AB9-46D8-B713-62555323E500}|Infrastructure\\Tech_Manage_Server.Infrastructure.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\infrastructure\\implementation\\inventoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF55F8CE-1AB9-46D8-B713-62555323E500}|Infrastructure\\Tech_Manage_Server.Infrastructure.csproj|solutionrelative:infrastructure\\implementation\\inventoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\imagesource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\imagesource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\application\\dtos\\imagedto\\imagesourcedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|solutionrelative:application\\dtos\\imagedto\\imagesourcedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\interface\\iimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\interface\\iimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF55F8CE-1AB9-46D8-B713-62555323E500}|Infrastructure\\Tech_Manage_Server.Infrastructure.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\infrastructure\\data\\managedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,34 +147,6 @@
       "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\interface\\irepairrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\repair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\repair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -115,20 +163,8 @@
       "RelativeMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|solutionrelative:application\\helpers\\calculatetotalamount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF55F8CE-1AB9-46D8-B713-62555323E500}|Infrastructure\\Tech_Manage_Server.Infrastructure.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\infrastructure\\implementation\\inventoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF55F8CE-1AB9-46D8-B713-62555323E500}|Infrastructure\\Tech_Manage_Server.Infrastructure.csproj|solutionrelative:infrastructure\\implementation\\inventoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\tech_manage_server\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27875E6D-C965-45D7-8182-36C76AFDFDD3}|Tech_Manage_Server\\Tech_Manage_Server.Api.csproj|solutionrelative:tech_manage_server\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\application\\dtos\\repairmodeldto\\repairdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|solutionrelative:application\\dtos\\repairmodeldto\\repairdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\repairitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\repairitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF55F8CE-1AB9-46D8-B713-62555323E500}|Infrastructure\\Tech_Manage_Server.Infrastructure.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\infrastructure\\implementation\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -163,10 +199,6 @@
       "RelativeMoniker": "D:0:0:{AF55F8CE-1AB9-46D8-B713-62555323E500}|Infrastructure\\Tech_Manage_Server.Infrastructure.csproj|solutionrelative:infrastructure\\implementation\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\interface\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\interface\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\interface\\irepairitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\interface\\irepairitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -179,20 +211,8 @@
       "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\interface\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\application\\helpers\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1ECBC46-5C71-45B2-A4E7-B56597457D88}|Application\\Tech_Manage_Server.Application.csproj|solutionrelative:application\\helpers\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\notifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\notifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|solutionrelative:domain\\models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBB1593F-9051-44DF-A418-F50CBF213A17}|Domain\\Tech_Manage_Server.Domain.csproj|d:\\project\\tech_manage_phone\\tech_manage_server\\domain\\models\\feedbacks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -245,7 +265,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 282,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -253,536 +273,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ImagesController.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\ImagesController.cs",
-              "RelativeDocumentMoniker": "Tech_Manage_Server\\Controllers\\ImagesController.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\ImagesController.cs",
-              "RelativeToolTip": "Tech_Manage_Server\\Controllers\\ImagesController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAACAAAABPAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AIChatRequest .cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\AIChatRequest .cs",
+              "RelativeDocumentMoniker": "Application\\Helpers\\AIChatRequest .cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\AIChatRequest .cs",
+              "RelativeToolTip": "Application\\Helpers\\AIChatRequest .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T01:22:17.262Z",
+              "WhenOpened": "2025-03-01T01:58:48.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Repair.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Repair.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\Repair.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Repair.cs",
-              "RelativeToolTip": "Domain\\Models\\Repair.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADwvxEAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "GeminiController.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\GeminiController.cs",
+              "RelativeDocumentMoniker": "Tech_Manage_Server\\Controllers\\GeminiController.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\GeminiController.cs",
+              "RelativeToolTip": "Tech_Manage_Server\\Controllers\\GeminiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:39:57.056Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RepairController.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\RepairController.cs",
-              "RelativeDocumentMoniker": "Tech_Manage_Server\\Controllers\\RepairController.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\RepairController.cs",
-              "RelativeToolTip": "Tech_Manage_Server\\Controllers\\RepairController.cs",
-              "ViewState": "AgIAANgAAAAAAAAAAIAwwN8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T08:36:25.615Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ImageSource.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\ImageSource.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\ImageSource.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\ImageSource.cs",
-              "RelativeToolTip": "Domain\\Models\\ImageSource.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T01:16:53.323Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MappingProfiles.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\MappingProfiles.cs",
-              "RelativeDocumentMoniker": "Application\\Helpers\\MappingProfiles.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\MappingProfiles.cs",
-              "RelativeToolTip": "Application\\Helpers\\MappingProfiles.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAUwCQAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:42:24.084Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ImageRepository.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\ImageRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Implementation\\ImageRepository.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\ImageRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Implementation\\ImageRepository.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAIwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T04:18:34.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ImageSourceDto.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\ImageDto\\ImageSourceDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\ImageDto\\ImageSourceDto.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\ImageDto\\ImageSourceDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\ImageDto\\ImageSourceDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T09:03:05.633Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ChatHub.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\ChatHub.cs",
-              "RelativeDocumentMoniker": "Application\\Helpers\\ChatHub.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\ChatHub.cs",
-              "RelativeToolTip": "Application\\Helpers\\ChatHub.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T01:07:28.835Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RepairRepository.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\RepairRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Implementation\\RepairRepository.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\RepairRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Implementation\\RepairRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:37:20.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InventoryController.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\InventoryController.cs",
-              "RelativeDocumentMoniker": "Tech_Manage_Server\\Controllers\\InventoryController.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\InventoryController.cs",
-              "RelativeToolTip": "Tech_Manage_Server\\Controllers\\InventoryController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAIwCMAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T09:27:17.825Z"
+              "WhenOpened": "2025-03-01T00:55:21.754Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "IImageRepository.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IImageRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Interface\\IImageRepository.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IImageRepository.cs",
-              "RelativeToolTip": "Domain\\Interface\\IImageRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T04:17:15.522Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Program.cs",
-              "RelativeDocumentMoniker": "Tech_Manage_Server\\Program.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Program.cs",
-              "RelativeToolTip": "Tech_Manage_Server\\Program.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAAAGMAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T03:19:11.717Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IRepairRepository.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IRepairRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Interface\\IRepairRepository.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IRepairRepository.cs",
-              "RelativeToolTip": "Domain\\Interface\\IRepairRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:07:53.605Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Tech_Manage_Server\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Tech_Manage_Server\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAtwBEAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-26T02:55:56.358Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DbInitializer.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Data\\DbInitializer.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Data\\DbInitializer.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Data\\DbInitializer.cs",
-              "RelativeToolTip": "Infrastructure\\Data\\DbInitializer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:22:35.022Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ManageDBContext.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Data\\ManageDBContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Data\\ManageDBContext.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Data\\ManageDBContext.cs",
-              "RelativeToolTip": "Infrastructure\\Data\\ManageDBContext.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAhwBEAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:24:00.043Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\Employee.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Employee.cs",
-              "RelativeToolTip": "Domain\\Models\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:39:45.391Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
               "Title": "MessageController.cs",
               "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\MessageController.cs",
               "RelativeDocumentMoniker": "Tech_Manage_Server\\Controllers\\MessageController.cs",
               "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\MessageController.cs",
               "RelativeToolTip": "Tech_Manage_Server\\Controllers\\MessageController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwDsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAtwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T01:11:40.576Z"
+              "WhenOpened": "2025-01-05T01:11:40.576Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "Tech_Manage_Server\\Controllers\\CustomerController.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "Tech_Manage_Server\\Controllers\\CustomerController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAIBZwB8AAAA/AAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "RepairRepository.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\RepairRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Implementation\\RepairRepository.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\RepairRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Implementation\\RepairRepository.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwBQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T11:02:32.417Z"
+              "WhenOpened": "2024-12-10T00:37:20.14Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RepairItemRepository.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\RepairItemRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Implementation\\RepairItemRepository.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\RepairItemRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Implementation\\RepairItemRepository.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowAMAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "InventoryController.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\InventoryController.cs",
+              "RelativeDocumentMoniker": "Tech_Manage_Server\\Controllers\\InventoryController.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\InventoryController.cs",
+              "RelativeToolTip": "Tech_Manage_Server\\Controllers\\InventoryController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBoAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:37:11.275Z"
+              "WhenOpened": "2024-11-22T09:27:17.825Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Role.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Role.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\Role.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Role.cs",
-              "RelativeToolTip": "Domain\\Models\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:40:08.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\Customer.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Customer.cs",
-              "RelativeToolTip": "Domain\\Models\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:39:37.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Message.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Message.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\Message.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Message.cs",
-              "RelativeToolTip": "Domain\\Models\\Message.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:39:54.104Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\ApplicationUser.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "Domain\\Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:15:26.533Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Tech_Manage_Server\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Tech_Manage_Server\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAIBJwFwAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T05:02:51.054Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\appsettings.json",
-              "RelativeDocumentMoniker": "Tech_Manage_Server\\appsettings.json",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\appsettings.json",
-              "RelativeToolTip": "Tech_Manage_Server\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-26T02:49:25.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "CalculateTotalAmount.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\CalculateTotalAmount.cs",
-              "RelativeDocumentMoniker": "Application\\Helpers\\CalculateTotalAmount.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\CalculateTotalAmount.cs",
-              "RelativeToolTip": "Application\\Helpers\\CalculateTotalAmount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:42:14.596Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "InventoryRepository.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\InventoryRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Implementation\\InventoryRepository.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\InventoryRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Implementation\\InventoryRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAMAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:37:02.733Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "CustomUserIdProvider.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\CustomUserIdProvider.cs",
-              "RelativeDocumentMoniker": "Application\\Helpers\\CustomUserIdProvider.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\CustomUserIdProvider.cs",
-              "RelativeToolTip": "Application\\Helpers\\CustomUserIdProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T01:20:33.491Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "GetVnTime.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\GetVnTime.cs",
-              "RelativeDocumentMoniker": "Application\\Helpers\\GetVnTime.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\GetVnTime.cs",
-              "RelativeToolTip": "Application\\Helpers\\GetVnTime.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T09:44:08.895Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "RepairDto.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\RepairModelDto\\RepairDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\RepairModelDto\\RepairDto.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\RepairModelDto\\RepairDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\RepairModelDto\\RepairDto.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA8wAsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T01:35:39.436Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "RepairItem.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\RepairItem.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\RepairItem.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\RepairItem.cs",
-              "RelativeToolTip": "Domain\\Models\\RepairItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:39:58.123Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "20241121043613_vVip.Designer.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Migrations\\20241121043613_vVip.Designer.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241121043613_vVip.Designer.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Migrations\\20241121043613_vVip.Designer.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20241121043613_vVip.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:45:29.085Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Implementation\\UnitOfWork.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\UnitOfWork.cs",
-              "RelativeToolTip": "Infrastructure\\Implementation\\UnitOfWork.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAIAwwCQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:37:51.158Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "CreateRepairDto.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\RepairModelDto\\CreateRepairDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\RepairModelDto\\CreateRepairDto.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\RepairModelDto\\CreateRepairDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\RepairModelDto\\CreateRepairDto.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA9wBYAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:40:51.588Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "UpdateRepairDto.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\RepairModelDto\\UpdateRepairDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\RepairModelDto\\UpdateRepairDto.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\RepairModelDto\\UpdateRepairDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\RepairModelDto\\UpdateRepairDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:42:10.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Tech_Manage_Server.Domain.csproj",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Tech_Manage_Server.Domain.csproj",
-              "RelativeDocumentMoniker": "Domain\\Tech_Manage_Server.Domain.csproj",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Tech_Manage_Server.Domain.csproj",
-              "RelativeToolTip": "Domain\\Tech_Manage_Server.Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-10T00:32:42.011Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "20241121044007_editMi.Designer.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Migrations\\20241121044007_editMi.Designer.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241121044007_editMi.Designer.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Migrations\\20241121044007_editMi.Designer.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20241121044007_editMi.Designer.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAMwBkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:43:47.431Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "20241121055356_updateMigration.Designer.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Migrations\\20241121055356_updateMigration.Designer.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241121055356_updateMigration.Designer.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Migrations\\20241121055356_updateMigration.Designer.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20241121055356_updateMigration.Designer.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAMwA8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:47:13.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "CustomerRepository.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\CustomerRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Implementation\\CustomerRepository.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\CustomerRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Implementation\\CustomerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:36:44.196Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "Domain\\Interface\\IUnitOfWork.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IUnitOfWork.cs",
-              "RelativeToolTip": "Domain\\Interface\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:29:07.502Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "IRepairItemRepository.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IRepairItemRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Interface\\IRepairItemRepository.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IRepairItemRepository.cs",
-              "RelativeToolTip": "Domain\\Interface\\IRepairItemRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:06:59.218Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "IInventoryRepository.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IInventoryRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Interface\\IInventoryRepository.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IInventoryRepository.cs",
-              "RelativeToolTip": "Domain\\Interface\\IInventoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:42:49.239Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "ICustomerRepository.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\ICustomerRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Interface\\ICustomerRepository.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\ICustomerRepository.cs",
-              "RelativeToolTip": "Domain\\Interface\\ICustomerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:42:48.118Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 12,
               "Title": "Response.cs",
               "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\Response.cs",
               "RelativeDocumentMoniker": "Application\\Helpers\\Response.cs",
@@ -790,23 +346,25 @@
               "RelativeToolTip": "Application\\Helpers\\Response.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:42:33.692Z"
+              "WhenOpened": "2024-12-10T00:42:33.692Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "Notifications.cs",
-              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Notifications.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\Notifications.cs",
-              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Notifications.cs",
-              "RelativeToolTip": "Domain\\Models\\Notifications.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Application\\Helpers\\ChatHub.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\ChatHub.cs",
+              "RelativeToolTip": "Application\\Helpers\\ChatHub.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAIBJwBkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:39:55.731Z"
+              "WhenOpened": "2025-01-05T01:07:28.835Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 9,
               "Title": "Invoice.cs",
               "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Invoice.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\Invoice.cs",
@@ -814,23 +372,597 @@
               "RelativeToolTip": "Domain\\Models\\Invoice.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:39:52.909Z"
+              "WhenOpened": "2024-12-10T00:39:52.909Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 4,
               "Title": "Inventory.cs",
               "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Inventory.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\Inventory.cs",
               "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Inventory.cs",
               "RelativeToolTip": "Domain\\Models\\Inventory.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:39:50.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ImagesController.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\ImagesController.cs",
+              "RelativeDocumentMoniker": "Tech_Manage_Server\\Controllers\\ImagesController.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\ImagesController.cs",
+              "RelativeToolTip": "Tech_Manage_Server\\Controllers\\ImagesController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAABQwCUAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T01:22:17.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RepairItem.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\RepairItem.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\RepairItem.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\RepairItem.cs",
+              "RelativeToolTip": "Domain\\Models\\RepairItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:39:58.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Program.cs",
+              "RelativeDocumentMoniker": "Tech_Manage_Server\\Program.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Program.cs",
+              "RelativeToolTip": "Tech_Manage_Server\\Program.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAjwJ8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T03:19:11.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Tech_Manage_Server\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Tech_Manage_Server\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAywHwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T05:02:51.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Repair.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Repair.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Repair.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Repair.cs",
+              "RelativeToolTip": "Domain\\Models\\Repair.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvxEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:39:57.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Role.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Role.cs",
+              "RelativeToolTip": "Domain\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:40:08.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\Auths\\UserDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Auths\\UserDto.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\Auths\\UserDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Auths\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T08:43:27.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Message.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Message.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Message.cs",
+              "RelativeToolTip": "Domain\\Models\\Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:39:54.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Domain\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:15:26.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\Auths\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Auths\\RegisterDto.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\Auths\\RegisterDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Auths\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T01:48:55.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RepairController.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\RepairController.cs",
+              "RelativeDocumentMoniker": "Tech_Manage_Server\\Controllers\\RepairController.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\RepairController.cs",
+              "RelativeToolTip": "Tech_Manage_Server\\Controllers\\RepairController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T08:36:25.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MappingProfiles.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\MappingProfiles.cs",
+              "RelativeDocumentMoniker": "Application\\Helpers\\MappingProfiles.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\MappingProfiles.cs",
+              "RelativeToolTip": "Application\\Helpers\\MappingProfiles.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:42:24.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Tech_Manage_Server\\Controllers\\CustomerController.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Tech_Manage_Server\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwFAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T11:02:32.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Domain\\Interface\\IUnitOfWork.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IUnitOfWork.cs",
+              "RelativeToolTip": "Domain\\Interface\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:29:07.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\Auths\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Auths\\LoginDto.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\Auths\\LoginDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Auths\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T00:59:16.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Tech_Manage_Server\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Tech_Manage_Server\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAUAAAAAAAAAAABRwCMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-26T02:55:56.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\appsettings.json",
+              "RelativeDocumentMoniker": "Tech_Manage_Server\\appsettings.json",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\appsettings.json",
+              "RelativeToolTip": "Tech_Manage_Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-26T02:49:25.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "InventoryRepository.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\InventoryRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Implementation\\InventoryRepository.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\InventoryRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Implementation\\InventoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:37:02.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ImageSourceDto.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\ImageDto\\ImageSourceDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\ImageDto\\ImageSourceDto.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\ImageDto\\ImageSourceDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\ImageDto\\ImageSourceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T09:03:05.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ImageRepository.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\ImageRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Implementation\\ImageRepository.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\ImageRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Implementation\\ImageRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwA8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T04:18:34.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ImageSource.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\ImageSource.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\ImageSource.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\ImageSource.cs",
+              "RelativeToolTip": "Domain\\Models\\ImageSource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T01:16:53.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IImageRepository.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IImageRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interface\\IImageRepository.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IImageRepository.cs",
+              "RelativeToolTip": "Domain\\Interface\\IImageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T04:17:15.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IRepairRepository.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IRepairRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interface\\IRepairRepository.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IRepairRepository.cs",
+              "RelativeToolTip": "Domain\\Interface\\IRepairRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:07:53.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\DbInitializer.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\DbInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:22:35.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ManageDBContext.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Data\\ManageDBContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\ManageDBContext.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Data\\ManageDBContext.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\ManageDBContext.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAhwBEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:24:00.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Employee.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Employee.cs",
+              "RelativeToolTip": "Domain\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:39:45.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "RepairItemRepository.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\RepairItemRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Implementation\\RepairItemRepository.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\RepairItemRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Implementation\\RepairItemRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowAMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:37:11.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Customer.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Customer.cs",
+              "RelativeToolTip": "Domain\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:39:37.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CalculateTotalAmount.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\CalculateTotalAmount.cs",
+              "RelativeDocumentMoniker": "Application\\Helpers\\CalculateTotalAmount.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\CalculateTotalAmount.cs",
+              "RelativeToolTip": "Application\\Helpers\\CalculateTotalAmount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:42:14.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CustomUserIdProvider.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\CustomUserIdProvider.cs",
+              "RelativeDocumentMoniker": "Application\\Helpers\\CustomUserIdProvider.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\CustomUserIdProvider.cs",
+              "RelativeToolTip": "Application\\Helpers\\CustomUserIdProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T01:20:33.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "GetVnTime.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\GetVnTime.cs",
+              "RelativeDocumentMoniker": "Application\\Helpers\\GetVnTime.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\Helpers\\GetVnTime.cs",
+              "RelativeToolTip": "Application\\Helpers\\GetVnTime.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T09:44:08.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "RepairDto.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\RepairModelDto\\RepairDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\RepairModelDto\\RepairDto.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\RepairModelDto\\RepairDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\RepairModelDto\\RepairDto.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA4wAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T01:35:39.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "20241121043613_vVip.Designer.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Migrations\\20241121043613_vVip.Designer.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241121043613_vVip.Designer.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Migrations\\20241121043613_vVip.Designer.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20241121043613_vVip.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:45:29.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Implementation\\UnitOfWork.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\UnitOfWork.cs",
+              "RelativeToolTip": "Infrastructure\\Implementation\\UnitOfWork.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAIAwwCQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:37:51.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "CreateRepairDto.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\RepairModelDto\\CreateRepairDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\RepairModelDto\\CreateRepairDto.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\RepairModelDto\\CreateRepairDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\RepairModelDto\\CreateRepairDto.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA5wBYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:40:51.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "UpdateRepairDto.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\RepairModelDto\\UpdateRepairDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\RepairModelDto\\UpdateRepairDto.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Application\\DTOs\\RepairModelDto\\UpdateRepairDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\RepairModelDto\\UpdateRepairDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:39:50.272Z"
+              "WhenOpened": "2024-12-10T00:42:10.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Tech_Manage_Server.Domain.csproj",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Tech_Manage_Server.Domain.csproj",
+              "RelativeDocumentMoniker": "Domain\\Tech_Manage_Server.Domain.csproj",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Tech_Manage_Server.Domain.csproj",
+              "RelativeToolTip": "Domain\\Tech_Manage_Server.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-10T00:32:42.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20241121044007_editMi.Designer.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Migrations\\20241121044007_editMi.Designer.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241121044007_editMi.Designer.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Migrations\\20241121044007_editMi.Designer.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20241121044007_editMi.Designer.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAMwBkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:43:47.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20241121055356_updateMigration.Designer.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Migrations\\20241121055356_updateMigration.Designer.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241121055356_updateMigration.Designer.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Migrations\\20241121055356_updateMigration.Designer.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20241121055356_updateMigration.Designer.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAMwA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:47:13.924Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 48,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Implementation\\CustomerRepository.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Infrastructure\\Implementation\\CustomerRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Implementation\\CustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:36:44.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "IRepairItemRepository.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IRepairItemRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interface\\IRepairItemRepository.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IRepairItemRepository.cs",
+              "RelativeToolTip": "Domain\\Interface\\IRepairItemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:06:59.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IInventoryRepository.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IInventoryRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interface\\IInventoryRepository.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\IInventoryRepository.cs",
+              "RelativeToolTip": "Domain\\Interface\\IInventoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:42:49.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interface\\ICustomerRepository.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Interface\\ICustomerRepository.cs",
+              "RelativeToolTip": "Domain\\Interface\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:42:48.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Notifications.cs",
+              "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Notifications.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Notifications.cs",
+              "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Notifications.cs",
+              "RelativeToolTip": "Domain\\Models\\Notifications.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:39:55.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
               "Title": "Feedbacks.cs",
               "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\Feedbacks.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\Feedbacks.cs",
@@ -838,11 +970,12 @@
               "RelativeToolTip": "Domain\\Models\\Feedbacks.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:39:47.958Z"
+              "WhenOpened": "2024-12-10T00:39:47.958Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 54,
               "Title": "AuditLog.cs",
               "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Domain\\Models\\AuditLog.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\AuditLog.cs",
@@ -850,23 +983,25 @@
               "RelativeToolTip": "Domain\\Models\\AuditLog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:18:11.153Z"
+              "WhenOpened": "2024-12-10T00:18:11.153Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 55,
               "Title": "Tech_Manage_Server.Api.csproj",
               "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Tech_Manage_Server.Api.csproj",
               "RelativeDocumentMoniker": "Tech_Manage_Server\\Tech_Manage_Server.Api.csproj",
               "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Tech_Manage_Server.Api.csproj",
               "RelativeToolTip": "Tech_Manage_Server\\Tech_Manage_Server.Api.csproj",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAgwBYAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwBcAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-16T03:32:41.12Z"
+              "WhenOpened": "2024-11-16T03:32:41.12Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 56,
               "Title": "20241121042928_v10.cs",
               "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Migrations\\20241121042928_v10.cs",
               "RelativeDocumentMoniker": "Tech_Manage_Server\\Migrations\\20241121042928_v10.cs",
@@ -877,7 +1012,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 58,
               "Title": "20241121013936_updateBase.cs",
               "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Migrations\\20241121013936_updateBase.cs",
               "RelativeDocumentMoniker": "Tech_Manage_Server\\Migrations\\20241121013936_updateBase.cs",
@@ -888,7 +1023,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 57,
               "Title": "20241121014919_updateDb.cs",
               "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Migrations\\20241121014919_updateDb.cs",
               "RelativeDocumentMoniker": "Tech_Manage_Server\\Migrations\\20241121014919_updateDb.cs",
@@ -899,19 +1034,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 60,
               "Title": ".gitattributes",
               "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\.gitattributes",
               "RelativeDocumentMoniker": ".gitattributes",
               "ToolTip": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\.gitattributes",
               "RelativeToolTip": ".gitattributes",
-              "ViewState": "AgIAABUAAAAAAAAAAIB5wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAALB8wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-09-14T02:17:44.087Z"
+              "WhenOpened": "2024-09-14T02:17:44.087Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 63,
               "Title": "Tech_Manage_Server.http",
               "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Tech_Manage_Server.http",
               "RelativeDocumentMoniker": "Tech_Manage_Server\\Tech_Manage_Server.http",
@@ -919,11 +1055,12 @@
               "RelativeToolTip": "Tech_Manage_Server\\Tech_Manage_Server.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-11-16T03:32:31.79Z"
+              "WhenOpened": "2024-11-16T03:32:31.79Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 59,
               "Title": ".gitignore",
               "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
@@ -931,11 +1068,12 @@
               "RelativeToolTip": ".gitignore",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-09-14T02:17:52.646Z"
+              "WhenOpened": "2024-09-14T02:17:52.646Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 61,
               "Title": "20240819053635_v1.cs",
               "DocumentMoniker": "D:\\Project\\Tech_Manage_Phone\\Tech_Manage_Server\\Tech_Manage_Server\\Migrations\\20240819053635_v1.cs",
               "RelativeDocumentMoniker": "Tech_Manage_Server\\Migrations\\20240819053635_v1.cs",
@@ -946,7 +1084,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 62,
               "Title": "20240727033606_fix database.cs",
               "DocumentMoniker": "D:\\Hoc_Tap\\C_Shape\\API\\1_Project\\Tech_Manage_Project\\Tech_Manage_Server\\Tech_Manage_Server\\Migrations\\20240727033606_fix database.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Hoc_Tap\\C_Shape\\API\\1_Project\\Tech_Manage_Project\\Tech_Manage_Server\\Tech_Manage_Server\\Migrations\\20240727033606_fix database.cs",

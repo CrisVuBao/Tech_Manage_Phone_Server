@@ -11,6 +11,7 @@ using Tech_Manage_Server.Models;
 
 namespace Tech_Manage_Server.Application.Helpers
 {
+    [Authorize]
     public class ChatHub: Hub
     {
         private readonly ManageDBContext _context;
@@ -25,41 +26,65 @@ namespace Tech_Manage_Server.Application.Helpers
         // hàm gửi tin nhắn
         public async Task SendMessage(int receiverId, string content)
         {
-            // lấy user gửi từ claims (sub = user id)
-            var senderId = Context.User?.FindFirst("sub")?.Value;
-            if (senderId == null) return;
+            // Lấy user gửi từ claims (sub = user id)
+            var senderIdStr = Context.User?.FindFirst("sub")?.Value;
+            if (senderIdStr == null) return;
 
-            var sender = await _userManager.FindByIdAsync(senderId);
+            if (!int.TryParse(senderIdStr, out int senderId))
+            {
+                // ID không hợp lệ
+                await Clients.Caller.SendAsync("Error", "Invalid sender ID.");
+                return;
+            }
 
-            // kiểm tra reciver (người nhận)
+            var sender = await _userManager.FindByIdAsync(senderIdStr);
+            if (sender == null)
+            {
+                await Clients.Caller.SendAsync("Error", "Sender not found.");
+                return;
+            }
+
             var receiver = await _userManager.FindByIdAsync(receiverId.ToString());
-            if(receiver == null) return;
+            if (receiver == null)
+            {
+                await Clients.Caller.SendAsync("Error", "Receiver not found.");
+                return;
+            }
 
-            // kiểm tra role
+            // Kiểm tra vai trò
             var senderRoles = await _userManager.GetRolesAsync(sender);
             var receiverRoles = await _userManager.GetRolesAsync(receiver);
 
-            // User chỉ được chat với Admin
-            if (senderRoles.Contains("Member") && !receiverRoles.Contains("Admin") && !receiverRoles.Contains("Employee")) return;
+            // Áp dụng quy tắc phân quyền
+            if (senderRoles.Contains("Member"))
+            {
+                if (!receiverRoles.Contains("Admin") && !receiverRoles.Contains("Employee"))
+                {
+                    // Member chỉ được gửi tin tới Admin hoặc Employee
+                    await Clients.Caller.SendAsync("Error", "Bạn chỉ có thể gửi tin nhắn tới Admin hoặc Employee.");
+                    return;
+                }
+            }
+            // Admin có thể gửi tới bất kỳ ai, không cần kiểm tra thêm
 
-            // save database
+            // Lưu tin nhắn vào cơ sở dữ liệu
             var message = new Message
             {
                 SenderId = sender.Id,
                 ReceiverId = receiver.Id,
                 Content = content,
-                SentAt = GetVnTime.GetVietnamTime(),
+                SentAt = GetVnTime.GetVietnamTime(), // Giả sử bạn có phương thức này để lấy giờ Việt Nam
                 IsRead = false
             };
 
             _context.Messages.Add(message);
             await _context.SaveChangesAsync();
 
-            // gửi tin nhắn đến receiver(người nhận) với userId
-            await Clients.Users(receiverId.ToString())
-                .SendAsync("ReceiveMessage", sender.Id, content, GetVnTime.GetVietnamTime());
+            // Gửi tin nhắn tới receiver
+            await Clients.User(receiverId.ToString())
+                .SendAsync("ReceiveMessage", sender.Id, content, message.SentAt);
 
-            // có thể gửi cho chính sender để cập nhật ui
+            // Gửi xác nhận tới sender
             await Clients.Caller.SendAsync("MessageSentConfirmation", message.MessageId);
 
         }
@@ -68,7 +93,11 @@ namespace Tech_Manage_Server.Application.Helpers
         {
             var userId = Context.UserIdentifier;
 
-             await Groups.AddToGroupAsync(Context.ConnectionId, userId);
+            if (!string.IsNullOrEmpty(userId))
+            {
+                await Groups.AddToGroupAsync(Context.ConnectionId, userId);
+            }
+
             await base.OnConnectedAsync();
         }
     }
